@@ -1,0 +1,305 @@
+---
+title: "POLI 787 - GLM and Multilevel Model Review"
+author: "Colin Case"
+date: "August 18, 2022"
+output: html_document
+header-include:
+  - \usepackage{amsbsy}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, message = FALSE, warning = FALSE)
+```
+
+## Generalized Linear Models (GLM)
+Last semester, you should have learned about both the linear model as well as generalized linear models. While powerful, linear models restrict our ability to study particular phenomenon that are non-linear in nature. Furthermore, we must assume conditional distributions that are Normal, limiting the number of outcome variables we can study. The GLM framework instead relies on an exponential family of stochastic components. This allows for non-linear effects of predictors on outcomes and for non-Normal conditional distributions of outcomes given predictors.
+
+GLM distributions are a part of the exponential family (this includes the Normal distribution). A distribution is said to belong to the exponential family if its PMF/PDF can be expressed in the following form:
+
+$$ f(y_i|\theta,\phi) = \exp \biggl[\frac{y_i\theta - b(\theta)}{a(\phi)}+c(y_i,\phi)\biggr]$$
+
+A number of common distributions used in political science belong to the exponential family, including Bernoulli, Categorical, Multinomial, and Poisson. Today, you are going to work with a model from the Bernoulli distribution (logit and probit models).
+
+## Excercise: Logit Model
+
+The dataset nes.dta contains the survey data of presidential preference and income for the 1992 US presidential election, along with other variables (including sex, ethnicity, education, party identification, political ideology, and state). To start, load the dataset and filter response to only those in 1992.
+
+```{r}
+# Clear Environment
+rm(list = ls())
+# Set working directory
+setwd("C:/Users/colin/poli787-fall22/lab1-regression")
+
+# Load 1992 NES Data
+library(haven)
+nesdata <- read_dta('nes.dta')
+
+# Remove Non 1992 Years
+library(dplyr)
+nes92 <- ___________
+
+```
+
+We are going to estimate a simple model predicting presidential vote choice (`rep_presvote`). While a number of factors can affect vote choice, we are going to focus on a model using `gender`, `race`, `urban`, and `educ1` as factor variables and `partyid7` as a continuous variable.
+
+```{r}
+# Convert variables to factors
+nes92 <- _________
+
+# Estimate Model
+m1 <- ___________ 
+
+# View the Model Output
+summary(m1)
+```
+
+As you can see, partisan identification and race2 are significant predictors of voting for Bush in the 1992 presidential election. How would you interpret the coefficients on those variables (Note: race1 is white and is the reference category. race2 is black)?
+
+While we have significant predictors, it is important to consider the absolute quality of models (test accuracy). With logit models, there are a few different ways we can do this. One metric we can use is the AUC-ROC. It compares the true-positive rate (sensitivity) to the false-positive rate (1 - specificity). Plotting these two forms a curve, and the area under it summarizes classification accuracy - larger values indicate better classifiers.
+
+The Rule of Thumb for interpreting the AUC-ROC is to compare the area under the curve and that of 0.5 (the diagonal line, like flipping a coin). We can plot the AUC-ROC by using the roc() function from the AUC package. Curves that fall closer to the upper left corner of the plot are better models.
+
+Compute and plot the AUC-ROC of the above model. Comment on the sensitivity and specificity parameters as well as how the model performs.
+
+```{r}
+library(AUC)
+# Use ROC to create roc.vote object
+roc.vote <- roc(predict(___, type= ________),
+                 as.factor(___________)
+# Compute AUC-ROC
+_________
+
+# Plot the AUC-ROC Curve
+_________
+
+
+```
+
+An important part of data analysis is being able to provide high-quality data visualizations that help readers to interpret results. To do this, we are going to plot the relationship between partisan identification and predicted likelihood of voting for Bush in the 1992 presidential election. When doing this, it is important that our predicted probabilities closely align with an estimate of the average effect in the population. 
+
+In nonlinear models, the substantive interpretation of the results (i.e. change in predicted probability) is sensitive to the values of other independent variables. There are two general approaches to set other independent variables. The first involves creating an example case by selecting a set of specific values for the other variables and calculating the relevant predicted probabilities or marginal effect for that case. The second approach involves holding each of the other independent variables at the observed values for each case in the sample, calculating the relevant predicted probabilities or marginal effect for each case, and then averaging over all of the cases. This second approach produces estimates that are closer to the average effect in the population. We will therefore use an observed values approach where we hold the population characteristics constant and vary partisan identification across the sample. We will then take the mean prediction for each value of partisan identification. 
+
+Create a publication quality plot comparing partisan identification on the x-axis and predicted probability of voting for Bush on the y-axis. What is the predicted probability of voting for Bush among strong Democrats (pid = 1)? Strong Republicans (pid = 7)?
+
+```{r}
+# Create Simulated Partisan Identification Vector (1 to 7, integers)
+sim.pid <- seq(min(____________, na.rm = ____), 
+               max(____________, na.rm = ____), by = ___)
+
+# Create Prediction Data for Obsserved Values Approach
+pred.data <- ____________
+# Create Plot Data DF with 4 columns and 7 rows
+plot.data <- ____________
+# Rename columns 
+colnames(plot.data) <- c('pid', 'preds', 'LB', 'UB')
+
+
+# Create Loop for Predictions on all values of PID
+for (___________){
+  pred.data$partyid7 <- ____ # Replace partyid7 in pred.data
+  all.preds <- ______ # Obtain Predictions with Standard Errors
+  plot.data$pid[i] <- _____ # Save PID value in plot.data
+  plot.data$preds[i] <- _______ # Save predictions
+  plot.data$LB[i] <- _________ # Save 95% CI LB
+  plot.data$UB[i] <- _________ # Save 95% CI UB
+}
+  
+# Create Plot for Predicted Probability of Voting for Bush
+
+
+```
+
+## Multilevel Models
+
+Multi-level model (aka Mixed Effects Modeling) refers to a class of models that have an additional regression model for the intercept (and/or slope). For example, consider the following model:
+$$Y_{ij} = \beta_{0j} + X_{ij} + \epsilon_{ij}$$
+
+where $i$ refers to individual case $i$ nested within group $j$
+
+We may estimate an additional level of regression model(s), allowing for the inclusion of a random intercept:
+$$\beta_{0j} + \gamma_{00} + \gamma_{01} W_j + u_{0j}$$
+
+Where $\gamma_{00}$ refers to the overall/ global mean intercept; $W_j$ refers to a level-2 predictor, $\gamma_{01}$  refers to the overall regression coefficient, or the slope, between the dependent variable and the Level 2 predictor, and $u_{0j}$ the random error component for the deviation of the intercept of a group from the overall intercept.
+
+And thus the random slope:
+$$\beta_{1j} = \gamma_{10} + u_{1j}$$
+Where $\gamma_{10}$ refers to the overall regression coefficient (slope), between the dependent variable and the level 1 predictor, and $u_{1j}$ refers to the error component for the slope (deviation of this group's slope from the global/ overall slope).
+
+
+## Excercise: Multilevel Models
+
+In many datasets, individuals are nested within countries. This calls for the multi-level modeling approach since pooling observations could result in ecological inference problems. In this exercise, let's explore a bit of the European Social Survey (ESS) Data. In the latest wave (2018), it asked European citizens their attitudes on immigrants and other things. Let's explore a bit on why Europeans feel that immigrants make their country a better/ worse place to live.
+
+Load the data (ESS9e02.dta). The dataset contains the following variables:
+
+Dependent variable: Immigrants make country worse or better place to live (imwbcnt)\ 
+
+Independent Variables:
+Placement on left right scale (`lrscale`) \ 
+
+How satisfied with life as a whole (`stflife`) \ 
+
+Trust in politicians (`trstplt`) \ 
+
+How religious are you (`rlgdgr`) \ 
+
+Gender (`gndr`) \ 
+
+Year of birth (`yrbrn`) \ 
+
+Country (`cntry`) \ 
+
+```{r}
+# Clear Environment
+rm(list = ls())
+
+# Load ESS9e02.dta
+ESS2018 <- read_dta("ESS9e02.dta")
+
+# Subset to above variables
+dat <- ESS2018 %>% dplyr::select(cntry, imwbcnt, lrscale, stflife, trstplt, rlgdgr, gndr, yrbrn)
+# Create Variables
+dat$age <- 2020 - as.numeric(dat$yrbrn)
+dat$imwbcnt <- as.numeric(dat$imwbcnt)
+dat$lrscale <- as.numeric(dat$lrscale)
+dat$stflife <- as.numeric(dat$stflife)
+dat$trstplt <- as.numeric(dat$trstplt)
+dat$rlgdgr <- as.numeric(dat$rlgdgr)
+
+```
+
+Sometimes we want to justify if multi-level models are even needed. You can do this by two ways: First, compute the Intra-class Correlation (ICC). This will help to justice a random intercept by country. Second, plot the correlation between independent variables and the dependent variable for each country to see if the relationships vary by country. This will justify a random slope by country.
+
+The ICC essentially reflects the proportion of variance explained by a grouping factor. You can compute this by fitting a null model with only a random intercept (and/or slope), and calculate the proportion of variance associated with the grouping variable. You can also calculate this quantity by `ICC()` from the `merTools` package. The rule of thumb for this quantity is that, the larger, the more suitable the multi-level model is. However, note that in huge cross-sectional datasets this quantity could be quite low. In experimental data you tend to see very high ICCs, in the range of >.50. Let's start by calculating the ICC, both by hand and using `merTools` package.
+
+```{r}
+library(lme4)
+
+#ICC by hand
+
+# Run Null Model with Country Random Inercept
+nullmod <- _______________
+
+# Variance Structure
+#Find variance attributed to country
+interceptvar <- ________________
+# Find the residual varriance
+residualvar <- ___________________
+
+#ICC by hand: country variance / country variance + residual variance
+________________________
+
+#ICC() from mertools
+________________________
+
+```
+As you can see, the relatively high ICC value here helps to justify our choice of including a random intercept by country.
+
+
+For the random slope, you can plot the correlation by country plots using `xyplot()` from the `Hmisc` package. Plot the correlation between left-right scale and the dependent variable to see if there's country-level effects varying the slope of `lrscale`.
+
+```{r}
+library(Hmisc)
+
+xyplot(as.numeric(______) ~ as.numeric(______) | _______, # Random Slope Model
+       data=________, main="Left-Right Scale by Country",
+   ylab="Immigrants make my country a better place to live ", 
+   xlab="Left - Right Scale",
+   panel=function(x, y){
+      panel.xyplot(jitter(x, factor=2.5), jitter(y, factor=2.5), pch=".")
+      panel.loess(x, y, span=1, lwd=2, col="red")
+      panel.lmline(x, y, lty=1, lwd=2)
+      }, as.table=TRUE
+   )
+```
+
+Fit a multi-level model with the variables above, with a random intercept at the country level. You can use either `lme4` or `nlme` to fit the model. Then, fit a multi-level model, with a random intercept and a random slope for left-right scale.
+
+```{r}
+# Random Intercept Model 
+m1 <- ________________________
+# Random Slope Model
+m2 <- ________________________
+```
+
+
+Note that the Standard Error is larger for left-right scale after allowing this slope to vary by country. But by doing this we should have controlled for the situation depicted in the correlation plot above. You can also find the variance terms associated with the intercept for country, and left-right scale for country.
+
+Let's visualize what happened in the two models. Recall that in model 1, we've only included a random intercept. So the difference between countries should be in the y-intercept. Let's visualize that:
+
+```{r}
+# Remove NAs
+dat2 <-_______
+# Create Predictions
+dat2$fit<- ________
+
+# Plot random intercepts by country
+ggplot(dat2, aes (x = _______, y = ______, colour = _____, group = ______)) + 
+  geom_point(position = "jitter", alpha = .05) +
+  geom_smooth(method = "lm", se = F) +
+  geom_smooth(data = _____, aes(x = ______, y = _______), 
+              group = 1, color = "black", method = "lm") + # global average.
+  labs(x="Left-Right Scale", 
+       y="Predicted: Immigrants make country a better place to live", 
+       subtitle="Black line indicates the global average/ fixed effects") +
+  scale_color_discrete(name="Country") +
+  theme_bw()
+
+
+```
+
+From the plot you can see that the main difference between countries is not the slope, but the y-intercept. That is by construct of model 1 where we included a random intercept but not slope.
+
+Now in model 2, we should expect the slopes to also change since we have included a random slope term in the model. Let’s visualize that as well:
+
+```{r}
+# Remove NAs
+dat2 <- na.omit(dat)
+# Create Predictions
+dat2$fit<- ________
+
+# Plot random slopes and intercepts
+ggplot(dat2, aes (x = _______, y = _____, colour = ______, group = ______)) + 
+  geom_point(position = "jitter", alpha = .05) +
+  geom_smooth(method = "lm", se = F) +
+  geom_smooth(data = _____, aes(x = ______, y = ______),
+              group = 1, color = "black", method = "lm") + # global average.
+  labs(x = "Left-Right Scale", 
+       y ="Predicted: Immigrants make country a better place to live", 
+       subtitle = "Black line indicates the global average/ fixed effects")+
+  scale_color_discrete(name="Country") +
+  theme_bw()
+
+```
+
+
+So in model 2 we see that the slopes are all different across countries. In Eastern countries like Serbia or Hungary, being right-wing makes you more pro-immigration. Alternatively, in Western Countries like Switzerland or the Netherlands, being right-wing makes you more anti-immigration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
