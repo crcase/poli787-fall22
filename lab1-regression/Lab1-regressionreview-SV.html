@@ -607,18 +607,10 @@ using <code>xyplot()</code> from the <code>Hmisc</code> package. Plot
 the correlation between left-right scale and the dependent variable to
 see if there’s country-level effects varying the slope of
 <code>lrscale</code>.</p>
-<pre class="r"><code>library(Hmisc)
-
-xyplot(as.numeric(______) ~ as.numeric(______) | _______, # Random Slope Model
-       data=________, main=&quot;Left-Right Scale by Country&quot;,
-   ylab=&quot;Immigrants make my country a better place to live &quot;, 
-   xlab=&quot;Left - Right Scale&quot;,
-   panel=function(x, y){
-      panel.xyplot(jitter(x, factor=2.5), jitter(y, factor=2.5), pch=&quot;.&quot;)
-      panel.loess(x, y, span=1, lwd=2, col=&quot;red&quot;)
-      panel.lmline(x, y, lty=1, lwd=2)
-      }, as.table=TRUE
-   )</code></pre>
+<pre class="r"><code>ggplot(__________________________)) + # Data frame and X/Y arguments
+  _____________________ + # Create loess line, se = F
+  _____________________ + # Arrange individual plots for each country
+  theme_bw()</code></pre>
 <p>Fit a multi-level model with the variables above, with a random
 intercept at the country level. You can use either <code>lme4</code> or
 <code>nlme</code> to fit the model. Then, fit a multi-level model, with
@@ -663,7 +655,7 @@ dat2 &lt;- na.omit(dat)
 dat2$fit&lt;- ________
 
 # Plot random slopes and intercepts
-ggplot(dat2, aes (x = _______, y = _____, colour = ______, group = ______)) + 
+ggplot(____, aes (x = _______, y = _____, colour = ______, group = ______)) + 
   geom_point(position = &quot;jitter&quot;, alpha = .05) +
   geom_smooth(method = &quot;lm&quot;, se = F) +
   geom_smooth(data = _____, aes(x = ______, y = ______),

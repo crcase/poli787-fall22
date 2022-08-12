@@ -209,21 +209,14 @@ merTools::ICC("imwbcnt", "cntry", dat)
 As you can see, the relatively high ICC value here helps to justify our choice of including a random intercept by country.
 
 
-For the random slope, you can plot the correlation by country plots using `xyplot()` from the `Hmisc` package. Plot the correlation between left-right scale and the dependent variable to see if there's country-level effects varying the slope of `lrscale`.
+For the random slope, you can plot the correlation by country plots using ggplot (You can also do this using `xyplot()` from the `Hmisc` package where you can specify the exact model). Plot the correlation between left-right scale and the dependent variable to see if there's country-level effects varying the slope of `lrscale`.
 
 ```{r}
-library(Hmisc)
+ggplot(dat, aes(x = imwbcnt, y = lrscale)) + # Data frame and X/Y arguments
+  stat_smooth(method = "lm", se = F) +# Create loess line, se = F
+  facet_wrap(cntry ~ ., ncol = 6) + # Arrange individual plots for each country
+  theme_bw()
 
-xyplot(as.numeric(imwbcnt) ~ as.numeric(lrscale) | cntry, # Random Slope Model
-       data=ESS2018, main="Left-Right Scale by Country",
-   ylab="Immigrants make my country a better place to live ", 
-   xlab="Left - Right Scale",
-   panel=function(x, y){
-      panel.xyplot(jitter(x, factor=2.5), jitter(y, factor=2.5), pch=".")
-      panel.loess(x, y, span=1, lwd=2, col="red")
-      panel.lmline(x, y, lty=1, lwd=2)
-      }, as.table=TRUE
-   )
 ```
 
 Fit a multi-level model with the variables above, with a random intercept at the country level. You can use either `lme4` or `nlme` to fit the model. Then, fit a multi-level model, with a random intercept and a random slope for left-right scale.
