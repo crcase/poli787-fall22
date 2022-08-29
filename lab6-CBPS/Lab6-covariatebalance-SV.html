@@ -370,253 +370,376 @@ pre code {
 </div>
 
 
-<div id="covariate-balance" class="section level1">
-<h1>Covariate Balance</h1>
-<p>When trying to estimate quantities of interest, such as the
-population average treatment effect (PATE), we are focused on making
-sure our treatment is random. In other words, we are trying to achieve
-(conditional) ignorability where the treatment status is independent of
-the potential outcomes (or in the case of conditional ignorability,
-independent conditional on some variables <span class="math inline">\(X_i\)</span>). We can think about this more
-tangibly in two ways: the potential outcomes for both the treatment and
-control group should have the same distribution, and the treatment and
+<div id="weighting" class="section level1">
+<h1>Weighting</h1>
+<p>Randomized controlled trials (RCTs) are often seen as the ``gold
+standard’’ for estimating the effects of treatments, interventions, and
+exposures on outcomes. However, in the social sciences, it is not always
+possible to achieve randomization (and even in experimental studies,
+this doesn’t happen either!), and we may have unobserved confounding
+variables that affect someone’s likelihood of receiving treatment.
+Weighting helps adjust for the covariate imbalance between the treated
+and the control groups in a study. The weights on observations can help
+us “balance-out” the influence of each observation on the causal
+relationship. In this manner, we are making it so the treatment and
 control groups are <em>balanced</em> on average when considering
-observable characteristics such as other covariates (we obviously cannot
-balance on unobservable characteristics).</p>
-<p>Today, we are going to focus on testing for covariance balance (in
-the next few weeks, we will also look at ways to achieve covariate
-balance when a treatment status is not purely randomized). When
-conducting these sorts of tests, we need to consider what we are
-actually testing. If our goal is to prove balance, our hypothesis
-testing should represent as such; rather, the current practice in
-political science is to use a null hypothesis of “no difference” and
-equates failing to reject the null with covariate balance. Recent work
-by <a href="https://doi.org/10.1111/ajps.12387">Hartman and Hidalgo
-(2018)</a> has taken a contrary stance, instead arguing that the
-difference should be the null and equivalence should be the
-alternative.</p>
-<p>In lab today, we are going to consider two natural experiments
-discussed in Hartman and Hidalgo’s paper where authors conducted
-covariate balance testing: <a href="https://doi.org/10.1017/S0003055410000596">Brady and McNulty
-(2011)</a> which uses a natural experiment to look at the effect of
-distance to the polling place on turnout, and <a href="https://doi.org/10.1017/S0003055412000573">Dunning and Nilekani
-(2013)</a> which uses a natural experiment to evaluate the effect of
-ethnic quotas on redistribution.</p>
-<div id="example-brady-and-mcnulty-2011" class="section level2">
-<h2>Example: Brady and McNulty (2011)</h2>
-<p>Brady and McNulty are looking at the “as-if” random consolidation of
-voting places in Los Angeles. For their design to have a valid causal
-identification strategy, it is important that the distance to the
-polling station before consolidation is the same for treatment and
-control groups. In the original paper, the authors assume a null
-hypothesis that covariates are balanced and an alternative that they are
-not. However, given the large sample size, the difference is highly
-significant but substantively small. Let’s see how equivalence testing
-could have made their case stronger.</p>
-<p>Unfortunately, no replication data is public for Brady and McNulty,
-but Hartman and Hidalgo do collect enough summary information to conduct
-an equivalence test by hand. The information you will need to do this
-can be found here:</p>
+observable characteristics (we obviously cannot balance on unobservable
+characteristics).</p>
+<p>In this exercise we will use the <code>lalonde</code> dataset from
+the <code>cobalt</code> package, which is data on the <a href="https://www.mdrc.org/publication/summary-and-findings-national-supported-work-demonstration">National
+Supported Work Demonstration</a>, an experimental public employment
+assistance program in the US in the 1970s. The question we are trying to
+answer here is: does the participation in the national supported work
+demonstration (<code>treat</code>) help workers gain a higher wage? In
+thinking about this question, consider who is likely to opt-into this
+program if it is optional and not randomly assigned?</p>
+<p>The outcome variable of interest is workers’ earnings in 1978
+<code>re78</code>. We are going to control for a couple of things such
+as pre-treatment wages <code>re74</code>, <code>re75</code>, if the
+person earned a degree <code>nodegree</code>, marital status
+<code>married</code>, as well as other demographic variables.</p>
+<div id="examining-covariate-balance" class="section level2">
+<h2>Examining Covariate Balance</h2>
+<p>To start, we are going to look at covariate balance between the
+treated and the control groups. We are going to use the
+<code>bal.tab</code> function from the <code>cobalt</code> package, and
+we specify that we are interested in the average treatment effect on the
+treated (ATT):</p>
+<pre class="r"><code># Clear Environment
+rm(list = ls())
+# Load Packages
+library(WeightIt)
+library(cobalt)
+library(tidyverse)
+library(ggplot2)
+library(stargazer)
+library(survey)
+library(jtools)
+
+# Load dataset Lalonde from cobalt package
+data(&#39;lalonde&#39;, package = &#39;cobalt&#39;)
+
+# Evaluate covariate balance on age, educ, married, nodegree, re74, and re75
+bal.tab(treat ~ __ + ___ + _____ + ____ + ___ + ___,
+        data = _____, estimand = &quot;ATT&quot;, m.threshold = .05)</code></pre>
+<p>As you can see from the output, none of the variables are balanced.
+Those who are older, married, and had higher income in 1974 and 1975 are
+much less likely to attend training (i.e. receive the treatment). Those
+without a high school degree and those who are more educated are more
+likely to attend job training. This raises questions regarding the ATT
+of the treatment in 1978 : Is it a treatment effect, or a function of
+the pre-existing differences that have not been taken into account in
+the treatment assignment process.</p>
+</div>
+<div id="propensity-scores" class="section level2">
+<h2>Propensity Scores</h2>
+<p>We will now try to address this by computing propensity score
+weights. To recall, propensity scores are probabilities of a unit
+(e.g. a subject) being assigned to a particular treatment given a set of
+factors/ covariates:</p>
+<p><span class="math display">\[e(x) = Pr(T=1|X=x)\]</span></p>
+<p>for <span class="math inline">\(T\)</span> is the treatment
+assignment dummy and <span class="math inline">\(X\)</span> is a matrix
+of covariates.</p>
+<p>Propensity Score weighting uses this quantity to adjust for the
+influence of a particular observation in the treated and control groups.
+It turns out the weights for the ATT are defined as <span class="math inline">\(w = 1\)</span> for the treated group and <span class="math inline">\(w = \frac{\hat{e(x)}}{1- \hat{e(x)}}\)</span> for
+the control group.</p>
+<p>Let’s try to compute this by hand. We will first fit a simple GLM
+regressing treatment on the covariates:</p>
+<pre class="r"><code># Estimate glm predicting treatment status
+ps.mod &lt;- ___(treat~ age + educ + married + nodegree + re74 + re75, 
+              data = lalonde, family = &quot;binomial&quot;)
+# Create predictions
+ps &lt;- predict(____, type = &quot;response&quot;)
+# View propensity scores
+head(ps)</code></pre>
+<p>These probabilities are our propensity scores <span class="math inline">\(\hat{e(x)}\)</span>. Now, let’s compute the
+weights:</p>
+<pre class="r"><code># Create variable name weights in lalonde df
+lalonde$weights &lt;- ifelse(lalonde$treat == 1, ___, # w=1 for treatment
+                  ________ # propensity score/(1-propensity score)</code></pre>
+<p>We should always check the distribution of our weights. If there are
+extreme values in the weights computed, we might need to use another
+weighting method, or trim some of the cases:</p>
+<pre class="r"><code># Subset to treatment and weights
+weights_dist &lt;- lalonde %&gt;% dplyr::select(treat, weights)
+# Add labls
+weights_dist$treat &lt;- ifelse(weights_dist$treat == 0, &quot;Control&quot;, &quot;Treatment&quot;)
+
+# Plot weight density by condition looking for outliers  
+ggplot(weights_dist, aes(x=weights))+
+  geom_density()+
+  facet_wrap(~treat)+
+  theme_bw()</code></pre>
+<p>As we can see, the control weights are OK - we don’t have extreme
+values. The computed weights range between 0-2. For the treatment group,
+all weights are equal to 1, so we don’t have to worry about it in this
+case. If the causal estimand of interest is not ATT, then weights are
+computed differently for the treatment group and you may see some
+variations in the calculated weights for the treated.</p>
+<p>And these are then the weights for the ATE for each observation. We
+can now refit the model with these weights using the
+<code>weights=</code> parameter in <code>lm()</code>. Since we didn’t
+weight by race, we also want to make sure we control for that factor in
+this model. Let’s compare the results between the model without
+weighting and with weighting:</p>
+<pre class="r"><code># Estimate and View model without weights
+lalonde_model_noW &lt;- lm(re78 ~ treat + race, data=lalonde)
+summary(lalonde_model_noW)
+# Estimate and view model with weights
+lalonde_model_w &lt;- lm(re78 ~ treat + race, data = lalonde, weights = weights)
+summary(lalonde_model_w)</code></pre>
+<p>As you can see, after weighting our observations, the treatment is
+now significant whereas without weights it would be not significant!</p>
+</div>
+<div id="the-weightit-package" class="section level2">
+<h2>The <code>WeightIt</code> package</h2>
+<p>Now that you understand how weighting works under the hood, we will
+turn to the <code>WeightIt</code> package that simplifies this process.
+<code>WeightIt</code> is a very powerful package for computing different
+kinds of weights and examining the weighting result. Let’s look at how
+you can compute weights with <code>WeightIt</code>.</p>
+<p>You compute the weights with the <code>weightit</code> function,
+which uses the same set of parameters from the <code>bal.tab</code>
+function:</p>
+<pre class="r"><code># Use weightit to calculate weights
+W.out &lt;- weightit(treat ~ age + educ + married + nodegree + re74 + re75,
+        data = lalonde, estimand = &quot;ATT&quot;, method = &quot;ps&quot;)
+W.out</code></pre>
+<p>This creates a <code>Weightit</code> object, which gives you a
+summary of the weight computation outcome. You can get more information
+out of it by calling <code>summary()</code> on it:</p>
+<pre class="r"><code># View w.out
+summary(W.out)</code></pre>
+<p>Now let’s reexamine covariate balance on the weightit object:</p>
+<pre class="r"><code># Re-examine covariate balance after weighting
+_____(____, m.threshold = .05, disp.v.ratio = TRUE)</code></pre>
+<p>Now you can see that every covariate is balanced between the treated
+and the control group. Now, let’s try to compare the hand-computed
+weights and the weights generated by <code>WeightIt</code> to validate
+our calculations:</p>
+<pre class="r"><code># Merge hand and weightit weights
+wdf &lt;- data.frame(hand = lalonde$weights,
+                  weightit = get.w(W.out))
+# Calculate correlation
+cor(wdf)
+
+# Plot Weights
+ggplot(wdf, aes(x=____, y=_______))+
+  geom_point()+
+  geom_abline(slope=1, lty=2)+
+  xlab(&quot;Weights computed by hand&quot;)+
+  ylab(&quot;Weights computed by WeightIt&quot;)+
+  theme_bw()</code></pre>
+<p>And the correlation matrix confirms our calculations - they are
+exactly the same as those generated by <code>WeightIt</code> and they
+fall perfectly along the 45 degrees diagonal line (perfect
+correlation).</p>
+</div>
+<div id="survey-weighted-regression" class="section level2">
+<h2>Survey Weighted Regression</h2>
+<p>How can we make inference out of these weights? We have explored
+<code>lm()</code> and <code>glm()</code> with the weights option, which
+finds:</p>
+<p><span class="math display">\[\mathop{\mathrm{argmin}}_\beta \ w_i
+\sum^N_{i=1}(y_i- X_i\beta)^2\]</span> where <span class="math inline">\(w_i\)</span> refers to the propensity score
+weights for individual <span class="math inline">\(i\)</span>.</p>
+<p>It turns out using <code>lm()</code> is not giving us an accurate
+estimation of the ATT because it only applies the weights on the errors
+in the least squares estimation (aka Weighted Least Squares - WLS).
+However, we should also consider the loss of precision due to the
+presence of sampling weights:</p>
+<p><span class="math display">\[\mathop{\mathrm{argmin}}_\beta \ s_iw_i
+\sum^N_{i=1}(y_i- X_i\beta)^2\]</span></p>
+<p>where <span class="math inline">\(s_i\)</span> is the sampling weight
+in a survey setting. This type of survey-weighted linear regression
+model can be fitted with the <code>survey</code> package:</p>
+<pre class="r"><code># Specify svydesign with no clusters
+d.w &lt;- svydesign(ids = ~1, weights = get.w(W.out),
+                     data = lalonde)
+# Fit model taking into account survey weights
+fit &lt;- svyglm(re78 ~ treat, design = d.w)
+# View Fit 
+summ(fit, confint = TRUE) </code></pre>
+<p>And it turns out after adjusting for survey-weights, we found the
+effect of the treatment is actually not statistically significant after
+considering for survey sampling weights on top of propensity score
+weights.</p>
+<p>If you have survey weights already, one way you could incorporate
+them in <code>WeightIt</code> is to specify the <code>s.weights</code>
+argument in <code>weightit()</code>. Then, the ATT weights are the
+product of the propensity score weights and the survey weights supplied.
+Using these ATT weights, you can then fit the WLS as usual but the
+standard errors will have to be adjusted by using the sandwich estimator
+(<code>sandwich::vcovHC</code>).</p>
+</div>
+</div>
+<div id="exercise-priming-norwegian-voters-about-the-municipal-reform-2014" class="section level1">
+<h1>Exercise: Priming Norwegian Voters about the Municipal Reform,
+2014</h1>
+<p>In Norway, there is a lot of small municipalities (similar to U.S.
+Counties) scattered across the country. There has been a debate on
+merging these small municipalities for roughly 2 decades. Proponents for
+the reform argue that this helps achieve the economies of scale of
+providing services to the localities, whereas opponents argue that each
+locality is unique. Given that the center-periphery cleavage is quite
+salient in Norway and overlaps with the linguistic conflict between
+Nynorsk and Bokmål speakers, municipal reform was a highly salient
+political issue in Norway at the time.</p>
+<p>In 2014, the Norwegian Citizens Panel (NCP) (Wave 3) conducted a
+randomized experiment on the respondents by coincidence. There was a
+question about whether the participant would pay 1000 Norwegian Krone
+(~$115) to maintain the current municipal structure. This primes the
+respondent that the current municipal structure can be costly and
+merging them could save the taxpayers’ money. Note that the assignment
+of this group of questions about municipal reforms is random, so even if
+the priming is not intentional, it remains a valid experimental
+treatment nonetheless.</p>
+<p>In this exercise, you are going to explore <strong>if priming
+respondents the cost of the existing municipal structure would lead to
+support for the Conservative Party</strong>. The Conservative Party of
+Norway supports municipal reforms of cutting down the number of
+municipalities, along with the Center Party and Progress Party. The
+Conservative Party would go on to form a center-right cabinet after
+emerging second in the 2017 parliamentary election. They will go on to
+implement the reform after forming a center-right government. The
+reforms were eventually completed on 1/1/2020.</p>
+<p>Since the treatment assignment is unintentional, it is unclear if the
+covariates are balanced for the treated and control group. Therefore, it
+is necessary to check covariate balance and generate weights to balance
+out the influence of particular observations given their covariate
+values.</p>
+<p>In the dataset <code>ncp_final.rds</code>, I have attached the survey
+weights from the NCP for you. The variables are as follows:</p>
 <ul>
-<li>“Those who had their polling place changed in 2003 had to go an
-average distance of 0.354 miles in 2002, those who did not have their
-polling place changed had to go only 0.320 miles—a difference of 0.034
-miles”</li>
-<li>From figure 1 – 3045206 voters, assuming roughly equal split between
-treatment and control</li>
-<li>From figure 1 – pooled std dev (assuming equal) of 0.2772</li>
+<li><code>conservative</code> : Self-reported affinity to the
+Conservative Party of Norway. Continuous. 1 = Intensely dislike; 7=
+Intensely like.</li>
+<li><code>treat</code> : If the respondent has been asked the question :
+“Would you rather pay NOK 1000 per year to maintain the current
+municipal structure?”. Dummy.</li>
+<li><code>interest</code> : Self-reported Political Interest.
+Continuous. 1= Very Interested; 5 = Not Interested.</li>
+<li><code>gender</code> : Biological Sex. Dummy. 1 = Male, 2=
+Female.</li>
+<li><code>region</code> : Region of the respondent. 1 = Oslo. 2=
+Østlandet. 3 = Sørlandet. 4= Vestlandet. 5=Trøndelag. 6 =
+Nord-Norge.</li>
+<li><code>edu</code> : Highest level of education attained. 1 = No
+Education/ Elementary School. 2= Upper Secondary School. 3= Univesity/
+Community College.</li>
+<li><code>yob</code> : Year of Birth. 1 = 1939 or earlier. 2= 1940-1949.
+3= 1950-1959. … 7= 1990 or later.</li>
+<li><code>weight</code> : Survey weights from NCP. Continuous.</li>
 </ul>
-<p>To start, specify the difference in means (dbar), sample size for
-each treatment status (m and n), the total sample, and the variances for
-each treatment status (x.var and y.var, which are equal). We are first
-going to conduct a simple difference of means test (because we don’t
-have a dataframe with individual observations, we can do this by
-hand)</p>
-<pre class="r"><code># Clear environment
-rm(list = setdiff(ls(), lsf.str()))
+<p>Take note that this dataset already has survey weights which are
+different from the weights we will calculate.</p>
+<p>Using bal.tab, look at the balance of demographic variables
+(<code>gender</code>, <code>region</code>, <code>edu</code>,
+<code>yob</code>) on the treatment before and after weighting. Focus on
+the ATT. How do they look?</p>
+<pre class="r"><code># Load data
+ncp_final &lt;- readRDS(________)
 
-# Set values from above
-dbar &lt;- 0.034 # Mean difference between treatment and control for distance
-m &lt;- (3045206)/2 # Number in treatment
-n &lt;- (3045206)/2 # Number in control
-N &lt;- m+n # Total Sample Size
-x.var &lt;-  (.2772)^2 # Calculate variance from pooled standard deviation (treatment)
-y.var &lt;- (.2772)^2 # Calculate variance from pooled standard deviation (control)
+# Look at balance of demographic variables
+______(______ ~ gender + region + edu + yob, 
+        data = _____, estimand = ___, m.threshold = .05)</code></pre>
+<p>The balance table suggests that education and year of birth are
+unbalanced between the treated and the control group. Use weightit to
+weight them (you should do this even on variables that are listed as
+balanced).</p>
+<pre class="r"><code># Create weights
+W.out &lt;- __________________
 
-# Difference in means test by hand
-se &lt;- sqrt( (1/m + 1/n) * ((m-1)*x.var^2 + (n-1)*y.var^2)/(N-2)) # Standard Error
-t &lt;- (dbar)/se # T-stat
-df &lt;- N-2 # Degrees of Freedom
-dat &lt;- c(dbar, se, t, 2*pt(-abs(t),df)) # Values related to test
-names(dat) &lt;- c(&quot;Difference of means&quot;, &quot;Std Error&quot;, &quot;t&quot;, &quot;p-value&quot;) 
-dat # Display values</code></pre>
-<pre><code>## Difference of means           Std Error                   t             p-value 
-##        3.400000e-02        8.806597e-05        3.860742e+02        0.000000e+00</code></pre>
-<p>From their data, it is clear there is a statically significant
-difference in distance to polling station by treatment status. However,
-this difference could be argued is substantively small. If you were to
-be picky, you could argue they need to balance on their coveriates to
-really get at the causal effect of the treatment status. However, a
-better test would be to compare the two values and test for
-similarity.</p>
-<p>For our test, we are going to use an equivalence interval of about
-0.2 standard deviations. This is a commonly accepted standard and seen
-as a strict test. Using all of the information we have to this point, we
-can calculate a t-test. Our null hypothesis is 2002 distance to polling
-stations is different for the treatment and control conditions. Our
-alternative hypothesis is they are not different. We will also include a
-confidence interval at the <span class="math inline">\(\alpha =
-0.05\)</span> level. The resulting value can be interpreted as the
-smallest equivalence interval supported by the data given the observed
-difference between treatment conditions.</p>
-<pre class="r"><code>## using very strict tolerance of 0.2
-epsilon &lt;- 0.2
+# Re-check balance with weights
+_______________________________</code></pre>
+<p>Regress the outcome variable on the treatment, <code>interest</code>,
+and the demographic variables. Fit two models: 1) One with no
+adjustment; 2) a Survey-Weighted GLM with propensity score weights.
+Then, use <code>summ</code> to take a look at the 95% Confidence
+Interval on the effect of the treatment from the survey-weighted
+GLM.</p>
+<pre class="r"><code># without any adjustment
+tmod1 &lt;- _________________
 
-# T Statistic for Equivalence Test
-t.stat &lt;- sqrt(m*n * (N-2)/N) * dbar / sqrt((m - 1)*x.var + (n - 1)*y.var)
-t.stat</code></pre>
-<pre><code>## [1] 107.0198</code></pre>
-<pre class="r"><code># Set Equivalence Confidence Interval
-alpha &lt;- 0.05
+# With Survey-weights &amp; PS weights adjustment
 
-# equiv confidence interval
-inverted &lt;- uniroot(function(x) pf(abs(t.stat)^2, 1, N-2, ncp = (m*n*x^2)/N)
-                    - alpha, c(0,2*abs(t.stat)), tol = 0.0001)$root
-inverted</code></pre>
-<pre><code>## [1] 0.1245523</code></pre>
-<p>As you can see, the t-statistic from our calculation is quite large,
-suggesting there is not a difference between these two groups on
-pre-treatment distance to the polling station. While Brady and McNulty
-had their work published, it is easy to see how potentially using the
-wrong test could have derailed their paper! The resulting confidence
-interval is only 0.124 standard deviations of pre-treatment difference,
-or 0.035 miles.</p>
-</div>
-<div id="excercise-dunning-and-nilekani-2013" class="section level2">
-<h2>Excercise: Dunning and Nilekani (2013)</h2>
-<p>The second example used in Hartman and Hidalgo compares equivalence
-testing with traditional balance tests that were used in Dunning and
-Nilekani. This time, instead of working with summary statistics, we will
-work with the original dataset and see how these tests can be
-applied.</p>
-<pre class="r"><code># Clear environment
-rm(list = setdiff(ls(), lsf.str()))
+# Create survey weights using svydesign
+design &lt;- ________________
 
-# Set WD
-#setwd(&quot;C:/Users/colin/poli787-fall22/lab3-covariatebalance&quot;)
+# Estimate model
+tmod2 &lt;- svyglm(___________________________ 
+                design = design)
+# 95% CI
+summ(tmod2, confint = TRUE) </code></pre>
+<p>Compute propensity score weights, INCLUDING survey weights provided
+(<code>weights</code>). Then, fit a WLS with weights computed and
+correct their standard errors with the sandwich estimator.</p>
+<p>To include our survey weights, we specify them with the
+<code>s.weights</code> parameter in <code>weightit()</code>. Then, we
+multiply the resulting weights with the survey weights. When fitting the
+WLS, we use this product of weights, then we will correct the standard
+errors with the sandwich estimator.</p>
+<pre class="r"><code>library(lmtest)
+library(sandwich)
+# include survey weight variants:
+ncp_clean &lt;- ncp_final %&gt;% dplyr::select(treat, interest, 
+                                         gender, region, edu, yob, 
+                                         conservative, weights)
 
-# Load data
-load(&#39;dunning_nilekani_replication.Rdata&#39;)
+# remove NAs, otherwise there will be NAs in the weights
+ncp_clean &lt;- ________(______)
 
-# Load Packages</code></pre>
-<p>In this dataset, our treatment variable is
-<code>scst_reserved_current</code>, a binary variable for whether or not
-a council had reserved quotas for certain ethnic groups or not. The
-dataset <code>dunning_nilekani_replication.Rdata</code> contains all the
-covariates used in Dunning and Nilekni (see Table 2). We are first going
-to start with the same test used in the paper. In this scenario, our
-null hypothesis is that covariates are balanced across treatment and
-control conditions and the alternative hypothesis is that they are
-different. To do this test, we are going to run a t-test on the balance
-covariates by treatment status.</p>
-<pre class="r"><code>data &lt;- data[,1:9] # Restrict data to variables in table 2 of paper
-treatment &lt;- subset(data, scst_reserved_current == 1) # Create treatment DF
-control &lt;- subset(data, scst_reserved_current == 0) # Create control DF
+# Calculate weights with survey weights (specify s.weights)
+W.out &lt;- weightit(__________________________, 
+                  data = _______, estimand = &quot;ATT&quot;, method = &quot;ps&quot;,
+                  _______= _______)
+# Check balance
+______________________________________</code></pre>
+<p>Again, the covariates are all balanced now.</p>
+<pre class="r"><code># Multiply the survey weights with the balance weights to create att.weights
+att.weights &lt;- ___________ *____________ #product of weights
 
-for(i in 2:9){ # Create loop for all pre-treatment covariates
-  temp &lt;- t.test(treatment[,i], control[,i]) # t.test for each covariate
-  cat(&#39;The difference of means for&#39;, colnames(data)[i], &#39;is&#39;, # Display difference
-     temp[[&quot;estimate&quot;]][[&quot;mean of x&quot;]]-temp[[&quot;estimate&quot;]][[&quot;mean of y&quot;]], &#39;\n&#39;)
-  cat(&#39;The p-value for&#39;,  colnames(data)[i], &#39;is&#39;, temp$p.value, &#39;\n&#39;) # Display p-value
-}</code></pre>
-<pre><code>## The difference of means for P_ILL is -257.5813 
-## The p-value for P_ILL is 0.2069476 
-## The difference of means for MARGWORK_P is -12.47508 
-## The p-value for MARGWORK_P is 0.7796924 
-## The difference of means for No_HH is -99.01548 
-## The p-value for No_HH is 0.09224547 
-## The difference of means for MAIN_AL_P is -14.13658 
-## The p-value for MAIN_AL_P is 0.7941045 
-## The difference of means for MAIN_CL_P is -57.94011 
-## The p-value for MAIN_CL_P is 0.2325998 
-## The difference of means for NON_WORK_F is -198.1382 
-## The p-value for NON_WORK_F is 0.1140354 
-## The difference of means for P_SC is -15.58066 
-## The p-value for P_SC is 0.8312295 
-## The difference of means for P_ST is 35.90199 
-## The p-value for P_ST is 0.4436843</code></pre>
-<p>Take a look at the p-values in the present section and recall that
-our null hypothesis is that these values are the same in the t-test. How
-would you interpret these results? Like all hypothesis testing, we would
-only fail to reject the null and cannot accept the null. But in many
-papers that use t-tests for covariate balance, that is exactly what we
-are doing! When we look ata few p-values in particular (No_HH stands
-out), how would you handle a p-value of 0.09? This is why equivilence
-testing is important.</p>
-<p>Beyond a simple t-test, we can also perform something called a
-Kolmogorov-Smirnov test. In the two-sample test, we are testing to see
-if two samples (here the treatment and control) came from the same
-distribution.</p>
-<pre class="r"><code>for(i in 2:9){ # Create loop for all pre-treatment covariates
-  temp &lt;- ks.test(treatment[,i], control[,i]) # K-S test for Each covariate
-  cat(&#39;The p-value for&#39;,  colnames(data)[i], &#39;is&#39;, temp$p.value, &#39;\n&#39;) # Display p-value
-}</code></pre>
-<pre><code>## The p-value for P_ILL is 0.1305739 
-## The p-value for MARGWORK_P is 0.5505553 
-## The p-value for No_HH is 0.23887 
-## The p-value for MAIN_AL_P is 0.96318 
-## The p-value for MAIN_CL_P is 0.3866445 
-## The p-value for NON_WORK_F is 0.3022742 
-## The p-value for P_SC is 0.1380164 
-## The p-value for P_ST is 0.7178216</code></pre>
-<p>Again, we get values that do not lead us to conclude that the
-distributions are different, but also do not allow us to conclude that
-the distributions are the same.</p>
-<p>We are now going to turn to conducting an equivalence test using
-<code>t_Tost</code>. It should be noted, this is one of a few ways to
-conduct this test depending on the data that you have. We are going to
-focus on one of the more problematic covariates, <code>No_HH</code>. For
-our test, we will use the same range as that used in Hartman and
-Hidalgo, which is <span class="math inline">\(0.36\sigma\)</span>. You
-can then plot the results as well as view the summary output. What
-should the authors have concluded about covariate balance in the
-original paper?</p>
-<pre class="r"><code># Load Package
-library(TOSTER)
-# Conduct Equivalence Test Using T_Tost
-e.test &lt;- t_TOST(formula = No_HH ~ scst_reserved_current, # Specify covariate ~ treatment status
-       data = data, # Call data
-       alpha = .05, # Alpha level
-       low_eqbound = -.36*sd(data$No_HH , na.rm = TRUE), # Set LB and UB (raw number)
-       high_eqbound = .36*sd(data$No_HH , na.rm = TRUE))
-# Plot Test
-plot(e.test)</code></pre>
-<p><img src="data:image/png;base64,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" width="672" /></p>
-<pre class="r"><code># Print Summary Information
-print(e.test)</code></pre>
-<pre><code>## 
-## Welch Two Sample t-test
-## Hypothesis Tested: Equivalence
-## Equivalence Bounds (raw):-201.730 &amp; 201.730
-## Alpha Level:0.05
-## The equivalence test was significant, t(354.23) = -1.751, p = 4.04e-02
-## The null hypothesis test was non-significant, t(354.23) = 1.688, p = 9.22e-02
-## NHST: don&#39;t reject null significance hypothesis that the effect is equal to zero 
-##  TOST: reject null equivalence hypothesis
-## 
-## TOST Results 
-##                    t       SE       df      p.value
-## t-test      1.688239 58.65016 354.2277 9.224547e-02
-## TOST Lower  5.127794 58.65016 354.2277 2.417490e-07
-## TOST Upper -1.751316 58.65016 354.2277 4.037849e-02
-## 
-## Effect Sizes 
-##                estimate         SE    lower.ci    upper.ci conf.level
-## Raw           99.015482 58.6501552 2.291602755 195.7393608        0.9
-## Hedges&#39; g(av)  0.176809  0.1054828 0.004146214   0.3510779        0.9
-## 
-## Note: SMD confidence intervals are an approximation. See vignette(&quot;SMD_calcs&quot;).</code></pre>
-</div>
+# Estimate the model using lm and specifying weights
+tmod3 &lt;- lm(conservative ~ treat + interest + as.factor(gender) + 
+              as.factor(region)+ as.factor(edu) + as.factor(yob) , 
+            data = ncp_clean, weights = att.weights)
+
+#correct SE with the sandwich estimator:
+corr_se &lt;- sandwich::vcovHC(tmod3) %&gt;% diag %&gt;% sqrt</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Report all models in the same table using stargazer (make sure to
+specify html document above). What is your conclusion?</li>
+</ol>
+<pre class="r"><code>#Putting it all together:
+
+stargazer(____, ____, ____, type=&quot;html&quot;,
+          _____________ = c(&quot;Primed&quot;,
+                               &quot;Political Interest&quot;,
+                               &quot;Female&quot;,
+                               &quot;Østlandet&quot;,
+                               &quot;Sørlandet&quot;,
+                               &quot;Vestlandet&quot;,
+                               &quot;Trøndelag&quot;,
+                               &quot;Nord-Norge&quot;,
+                               &quot;Completed Upper Secondary Education&quot;,
+                               &quot;Completed University/ College Education&quot;,
+                               &quot;Born between 1940-1949&quot;,
+                               &quot;Born between 1950-1959&quot;,
+                               &quot;Born between 1960-1969&quot;,
+                               &quot;Born between 1970-1979&quot;,
+                               &quot;Born between 1980-1989&quot;,
+                               &quot;Born in or after 1990&quot;,
+                               &quot;Intercept&quot;),
+          se=list(_________________),
+          column.labels = c(&quot;No Weights OLS&quot;, &quot;PS Weights SWLS&quot;, &quot;PS/NCP Weights SWLS&quot;),
+          star.cutoffs = c(.10,.05,.01,.001),
+          star.char = c(&quot;+&quot;,&quot;*&quot;,&quot;**&quot;,&quot;***&quot;),
+          column.sep.width = &quot;10pt&quot;,
+          notes = c(&quot;p&lt;.10+, p&lt;.05*, p&lt;.01**, p&lt;.001***&quot;),
+          single.row = TRUE,
+          notes.append=FALSE)</code></pre>
 </div>
 
 
