@@ -1,0 +1,311 @@
+---
+title: "POLI 787 - Power and Sensitivity Analysis"
+author: "Colin Case"
+date: "September 8, 2022"
+output: html_document
+header-include:
+  - \usepackage{amsbsy}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \DeclareMathOperator*{\argmin}{argmin} % thin space, limits underneath in displays
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, message = FALSE, warning = FALSE)
+```
+
+Today we are going to focus on two tools: power analysis and sensitivity analysis. Both are important tools you could implement either in the beginning of your research design or after the fact to validate your results. To demonstrate their usefulness, we will be working with simulated data from `fabricate` so you can see how these tools might work both before fielding a study or in validating your results.
+
+# Power Analysis
+
+The statistical power of a hypothesis test can be thought of as the probability of detecting an effect, if there is a true effect to be found. In general, the power of a test is determined by the hypothesized true effect, sample size, standard deviation, and significance level desired. There are also a few different variations of this test depending on your quantity of interest and research design. Let's start with a really simple example from the [vignette](https://cran.r-project.org/web/packages/pwr/vignettes/pwr-vignette.html) to see how power analysis can work.
+
+Imagine you and a friend are flipping a coin. When it lands heads, you get a dollar, when it lands tails, she gets a dollar. The only problem is, over the first few times you've played this game, the coin has landed tails 60% of the time! You want to conduct an experiment to determine whether or not the coin is fair, but how many times should you flip the coin? Even if the coin almost always comes up heads, you will sometimes flip tails. So in any given sample, you may simply get unlucky and coin will look fair even though it isn’t. This is unlikely to be the case if you flip each coin a large number of times, but that takes effort, and you can never guarantee that you didn’t get unlucky, so the question is: how comfortable are you with being wrong? What if the coin only comes up heads 55% of the time? Intuitively it seems like you would need a bigger sample, but how much bigger?
+
+These are all questions about statistical power. In layman’s terms, power is your ability to detect effects. In less layman-y terms, power is the probability of identifying an effect, conditional on one being present. Power underpins the design of vaccine trials, A/B tests, and is a driver of the “reproducibility crisis” in the social sciences. Ensuring that you have sufficient power means that you can be more certain of what your statistics are telling you. Being underpowered means that any effects you find are the result of chance, and any effects you don’t find could just be because you might not have enough data.
+
+Statistical power is the probability of identifying an effect, conditional on one being present. Power is generally a function of your posited effect size, the variability among your observations, your sample size, your confidence threshold. Power analyses are most often used to determine: a) how big of a sample you need for your analysis, and b) what is the minimum effect size that you are able to detect. This is done by holding the other factors constant, and increasing/decreasing the variable of interest (sample size or effect size) until you hit a power threshold. Generally researchers select the arbitrary power threshold of 0.80, meaning that you have a power of 80% and are able to detect true effects of that magnitude, with that sample size, 80% of the time.
+
+Let's turn back to our coin example. Assuming a true proportion for the coin of landing heads at 60%, we can calculate how many coin flips we would need to achieve a power level of 80% with a significance level of .05. How do you think this would change if we thought the true proportion was 75% for the coin landing heads.
+
+```{r}
+# Set Seed
+set.seed(100)
+# Clear Environment
+rm(list = ls())
+# Load Packages
+library(pwr)
+
+# Conduct One-Sample proportions test (80%)
+pwr.p.test(h = ES.h(p1 = 0.60, p2 = 0.5), # Specify difference
+           sig.level = 0.05, # Specify significance level
+           power = 0.80, # Specify power level
+           alternative = 'greater') # Specify hypothesis
+
+# Conduct with higher power level (90%)
+pwr.p.test(h = ES.h(p1 = 0.75, p2 = 0.5),
+           sig.level = 0.05,
+           power = 0.90,
+           alternative = 'greater')
+
+
+```
+
+As you can see, the power test gives us the desired sample size to calculate an experiment with the desired outputs and hypothesized effects. We can also consider solving for the effect size we could uncover given a specific power threshold, significance level, and sample size as well as the power level of a given study.
+
+```{r}
+
+# Conduct One-Sample proportions test (80%)
+pwr.p.test(n = 200,
+           sig.level = 0.05,
+           power = 0.80,
+           alternative = 'greater')
+
+# Conduct with higher power level (90%)
+pwr.p.test(h = ES.h(p1 = 0.6, p2 = 0.5),
+           sig.level = 0.05,
+           n = 200,
+           alternative = 'greater')
+
+
+```
+
+
+## Excercise: Power Analysis Using Simulated Data
+
+For our exercise, we are going to see the effect of a treatment, $Z$, on number of school days attended by children. To do this, we are going to write a function where we can change the effect size and the sample size in our simulated data set.
+
+```{r}
+# Load Packages
+library(fabricatr)
+
+data.gen.func <- function(effect_size, sample_size){ # Specify function where can change
+                                                     # effect_size and sample_size
+    fabricate( # Call fabricate
+    N = sample_size, # Specify sample size argument in fabricate
+    school_n = sample(0:3, N, replace = TRUE), # Varying Intercept by School
+    Z = sample(0:1, N, replace = TRUE), # Randomly assign treatment assignment
+    days_attended = round(150 + effect_size*Z + school_n*2 + rnorm(N, mean = 0, sd = 20))
+    # Specify outcome variable
+  )
+}
+
+```
+
+We are going to use four examples to see how these dataframes look: small effect, small sample; small effect, large sample, large effect, small sample, large effect, large sample 
+
+```{r}
+# Small Effect Small Sample (1, 100)
+ss <- data.gen.func(2, 100)
+
+# Small Effect Large Sample (1, 500)
+sl <- data.gen.func(2, 500)
+
+# Large Effect Small Sample (10, 100)
+ls <- data.gen.func(10, 100)
+
+# Large Effect Large Sample (10, 500)
+ll <- data.gen.func(10, 500)
+
+```
+
+Let's take some time to visualize this result. How do the confidence intervals appear relative to other sample sizes and effect sizes?
+
+```{r}
+# Load Packages
+library(dplyr)
+library(ggplot2)
+
+# Create Summary Data 
+ss.plot <- ss %>%
+  group_by(Z) %>%
+  summarise(mean = mean(days_attended), sd = sd(days_attended), n = nrow(ss)/2)
+
+# Create Label for Plot
+ss.plot$example <- 'Small Effect, Small Sample'
+
+# Create Mean, SD and N for plot
+sl.plot <- sl %>%
+  group_by(Z) %>%
+  summarise(mean = mean(days_attended), sd = sd(days_attended), n = nrow(sl))
+
+sl.plot$example <- 'Small Effect, Large Sample'
+
+ls.plot <- ls %>%
+  group_by(Z) %>%
+  summarise(mean = mean(days_attended), sd = sd(days_attended), n = nrow(ls)/2)
+
+ls.plot$example <- 'Large Effect, Small Sample'
+
+ll.plot <- ll %>%
+  group_by(Z) %>%
+  summarise(mean = mean(days_attended), sd = sd(days_attended), n = nrow(ll)/2)
+
+ll.plot$example <- 'Large Effect, Large Sample'
+
+# Create Plot Data
+plot.data <- rbind(ss.plot, sl.plot, ls.plot, ll.plot)
+
+# Plot Data
+ggplot(plot.data, aes(x = as.factor(example), y = mean,
+               colour = as.factor(Z))) +
+  geom_pointrange(aes(ymin=mean - (1.96*sd)/sqrt(n), 
+                    ymax=mean + (1.96*sd)/sqrt(n)), size = 1) +
+  theme_bw() +
+  labs(x = 'Simulation Characteristics', y = 'Average Days Attended') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  guides(colour = guide_legend(title = 'Treatment Status')) +
+  scale_color_manual(values=c("Gray1", "Gray45"))
+
+```
+
+
+
+As you can see, our ability to actually observe the simulated effect is a function of both the effect size and the sample size. Let's go ahead and conduct a power analysis for the small effect, small sample DF and the large effect, large sample DF.
+
+```{r}
+
+power.small.small <- pwr.t.test(n = nrow(ss)/2, # Specify number in each treatment
+                                d = (mean(ss$days_attended[ss$Z == 1]) - # Call mean using data
+             mean(ss$days_attended[ss$Z == 0]))/sd(ss$days_attended), # divide by SD
+           sig.level = 0.05) # Specify significance level 
+
+power.small.small # Call object
+
+power.large.large <- pwr.t.test(n = nrow(ll)/2, d = (mean(ll$days_attended[ll$Z == 1]) - 
+             mean(ll$days_attended[ll$Z == 0]))/sd(ss$days_attended),
+           sig.level = 0.05)
+power.large.large
+
+```
+As you can see, our first example is pretty under-powered while our second example is pretty over-powered. We can use this to think about how many people we need in certain treatment conditions or sample.
+
+
+Finally, we are going to do something you can do in one of your research designs by simulating different effect sizes and sample sizes to see how the power changes. This time, we conducting the power analysis, we'll specify our desired level of power (80%) and not the sample size.
+
+```{r}
+power.small.small <- pwr.t.test(power = 0.8 , d = (mean(ss$days_attended[ss$Z == 1]) - 
+             mean(ss$days_attended[ss$Z == 0]))/sd(ss$days_attended),
+           sig.level = 0.05) # DO the same as above w/o n and specify power = 0.8
+
+power.small.small
+
+power.large.large <- pwr.t.test(power = 0.8, d = (mean(ll$days_attended[ll$Z == 1]) - 
+             mean(ll$days_attended[ll$Z == 0]))/sd(ss$days_attended),
+           sig.level = 0.05) # Do the same as above w/o n and specify power = 0.8
+
+power.large.large
+
+
+
+# Plot object from power analysis
+plot(power.small.small)
+plot(power.large.large)
+
+
+```
+
+As you can see, our sample is probably way too small for the small effect size and way too big for the large effect size. We should probably reconsider a better design!
+
+
+# Sensitivity Analysis
+
+As we have discussed throughout the semester, an important component of making causal claims in observation data is the assumption that, conditional on some covariates, our treatment status independent of the outcome variable. In most cases, that assumption is unlikely to hold and it is difficult, if not impossible, to discuss the universe of potential unobserved confounders and how they might bias the causal estimate. Sensitivity analysis is a way of quantitatively discussing the fragility of a result when our central assumption may be violated.
+
+[Cinelli and Hazlett (2019)](https://doi.org/10.1111/rssb.12348) develop a number of tools in their `sensemakr` package for dealing with potential issues of omitted variable bias. To do so, we are going to again be using simulated data to see how stable the relationship we have actually is.
+
+## Excercise: Sensitivity Analysis
+ 
+Let's return to our simulated example from above. For this, we will use a more reasonable sample with an effect size of 4 and a sample size of 550 To see our SATE, let's run a quick OLS regression predicting days attended with treatment as the primary covariate. We will also control for school number (as a factor).
+
+
+```{r}
+# Load Package
+library(sensemakr)
+
+# Simulate Data
+df <- data.gen.func(4, 550)
+
+# Run Model
+m1 <- lm(days_attended ~ Z + as.factor(school_n), data = df)
+
+# See Output
+summary(m1)
+
+```
+
+Significant effects! We are well on our way to publication! However, so far we have made the assumption of no unobserved confounders for unbiasedness. However, we've come to find out that our treatment was not randomly assigned, and parents could opt their children in. As you can imagine, that leaves us with a lot of potential confounders. We'll focus on one -- parents' level of education. It is likely that this effects both our treatment status and our outcome variable. Let's start conducting an analysis to see how large of a problem this might be.
+
+Sensitivity analysis works by taking a covariate in the model (in our case, School number 3), and seeing how sensitive results are to a potentially unobserved confounder some magnitude larger than the potential confounder.
+
+Begin the analysis by applying `sensemakr` to the original regression model, `m1`.
+
+The arguments are:
+
+- model: the lm object with the outcome regression.
+
+- treatment: the name of the treatment variable.
+
+- benchmark_covariates: the names of covariates that will be used to bound the plausible strength of the unobserved confounders. 
+
+- kd and ky: these arguments parameterize how many times stronger the confounder is related to the treatment (kd) and to the outcome (ky) in comparison to the observed benchmark covariate. We will specify kd to 1:3 (i.e. once, twice and three times the size of school 3).
+
+- q: this allows the user to specify what fraction of the effect estimate would have to be explained away to be problematic. Setting q = 1, as we do here, means that a reduction of 100% of the current effect estimate, that is, a true effect of zero, would be deemed problematic. The default is 1.
+
+- alpha: significance level of interest for making statistical inferences. The default is 0.05.
+
+- reduce: should we consider confounders acting towards increasing or reducing the absolute value of the estimate? The default is reduce = TRUE, which means we are considering confounders that pull the estimate towards (or through) zero.
+
+```{r}
+# Conduct Sensitivity Analysis
+model.sensitivity <- sensemakr(model = m1,  # Specify model
+                                treatment = "Z", # Specify treatment
+                                benchmark_covariates = "as.factor(school_n)3", # Covariate
+                                kd = 1:10) # Size of Effect
+
+
+summary(model.sensitivity) # Summary(object)
+
+
+```
+
+As you can see, it would take a pretty big effect size for our result to become not significant, in this case 5x the effect size of one of the factors we deemed to be substanatively important (school number 3). There is some art to this sort of justification, and it will rely on substantive expertise to justify. But 5x an effect is a pretty large justification.
+
+We can also plot the results using contours plots.
+
+```{r}
+plot(model.sensitivity) # Plot(object)
+
+plot(model.sensitivity, sensitivity.of = "t-value") # Specify sensitivity.of = 't-value'
+
+
+
+```
+In the first plot, the horizontal axis shows the hypothetical residual share of variation of the treatment that unobserved confounding explains. The vertical axis shows the hypothetical partial $R^2$ of unobserved confounding with the outcome. The contours represent the effect size at various values. As you can see, where we would be with a confounder (represented by the red dots) of various sizes does not cross either the 0 line (effect size). It crosses the 1.96 contour line when looking at the t-statistic, but this is only after considering a confounder 5x the size of the one we tested. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
