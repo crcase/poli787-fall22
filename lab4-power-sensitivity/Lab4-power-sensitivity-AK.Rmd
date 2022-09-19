@@ -2,7 +2,7 @@
 title: "POLI 787 - Power and Sensitivity Analysis"
 author: "Colin Case"
 date: "September 8, 2022"
-output: html_document
+output: pdf_document
 header-include:
   - \usepackage{amsbsy}
   - \usepackage{amsmath}
@@ -71,7 +71,7 @@ pwr.p.test(h = ES.h(p1 = 0.6, p2 = 0.5),
 ```
 
 
-## Excercise: Power Analysis Using Simulated Data
+## Exercise: Power Analysis Using Simulated Data
 
 For our exercise, we are going to see the effect of a treatment, $Z$, on number of school days attended by children. To do this, we are going to write a function where we can change the effect size and the sample size in our simulated data set.
 
@@ -214,7 +214,7 @@ As we have discussed throughout the semester, an important component of making c
 
 [Cinelli and Hazlett (2019)](https://doi.org/10.1111/rssb.12348) develop a number of tools in their `sensemakr` package for dealing with potential issues of omitted variable bias. To do so, we are going to again be using simulated data to see how stable the relationship we have actually is.
 
-## Excercise: Sensitivity Analysis
+## Exercise: Sensitivity Analysis
  
 Let's return to our simulated example from above. For this, we will use a more reasonable sample with an effect size of 4 and a sample size of 550 To see our SATE, let's run a quick OLS regression predicting days attended with treatment as the primary covariate. We will also control for school number (as a factor).
 
