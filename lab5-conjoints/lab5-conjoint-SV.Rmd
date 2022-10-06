@@ -2,7 +2,7 @@
 title: "POLI 787 - Conjoint Experiments"
 author: "Colin Case"
 date: "September 22, 2022"
-output: html_document
+output: pdf_document
 header-include:
   - \usepackage{amsbsy}
   - \usepackage{amsmath}
@@ -281,17 +281,7 @@ Qualtrics.SurveyEngine.setEmbeddedData('traits1b', traits_b.join("|"));
 
 And Voila! You've just created a conjoint experiment on Qualtrics with Javascript for free! Make sure to edit the question response, and then go click "preview survey" to see how the randomization looks/if it worked or not.
 
-# Exercise
-
-For today's exercise, I want you to create a Qualtrics survey on your own to work with editing the javascript code. For your design, you are more than welcome to use the table setup and add or delete variables. But your design must incldue the following:
-
-1. At least three randomly assigned variables with no dependencies
-
-2. One variable where it should be different for each candidate.
-
-3. One variable with pre-specified weights to match some sort of population value.
-
-For the lab, please submit the Qualtrics survey preview link.
+For your lab submission, please turn in a link to the published survey.
 
 
 

@@ -1,0 +1,1121 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,gender,education,age,control_count,treatment_count
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Please note, provide fake responses when answering this survey. What is your gender?",What is the highest level of school you have completed or the highest degree you received?,Please select your age,"Now I am going to show you three things that sometimes make people
+angry or upset. After I read all three, just tell me HOW MANY of
+them upset you. I don’t want to know which ones, just HOW MANY.
+
+(1) The federal government increasing the tax on gasoline;
+(2) Professional athletes earning large salaries;
+(3) Requiring seat belts be used when driving;
+(4) Large corporations polluting the environment","Now I am going to show you three things that sometimes make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.
+
+(1) The federal government increasing the tax on gasoline;
+(2) Professional athletes earning large salaries;
+(3) Requiring seat belts be used when driving;
+(4) Large corporations polluting the environment
+(5) Black leaders asking the government for affirmative action"
+"{""ImportId"":""startDate"",""timeZone"":""America/New_York""}","{""ImportId"":""endDate"",""timeZone"":""America/New_York""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/New_York""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID1""}","{""ImportId"":""QID2""}","{""ImportId"":""QID3""}","{""ImportId"":""QID4""}","{""ImportId"":""QID5""}"
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5u0GXfN20ZvqIRM,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",65 - 74,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6JZHMKqQ09pAfYy,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5tKveQJbH3pFNGu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1SqoMyJYABLbVP0,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cNiGb730sPw5Lcq,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1GGrmPoj4IM8jtA,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0ooBWoLrrtF1S98,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_38Zsxu4eZHK0jxI,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9t4DaWtCzN1Qwf4,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_dhDyL0e1vqhSgeO,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1GE5JFJiBuQhISW,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eVFAl7GBrdapqKO,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9viewspNND3L4vc,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_ebqilu7fazbYcaG,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_79yyqzXuQpoNc0K,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_aaVgeNMC7jd8d4q,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5bxkDqJkggQJeK2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1LHYN8kokzNdreu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),Under 18,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_4JhdYyA3deOV3Ey,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6D9CRRnd16BwMtw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),55 - 64,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6Kx23dvogMTQ1L0,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,25 - 34,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5C7oWvZbpGY8dFk,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,Under 18,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cUWro0Aj0wwvX38,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_74ej5ZK2WhpQpz8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eqFrhPBZijzZrg2,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_55dLkq99dblGtdY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",65 - 74,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eLgxr1PD19TVkUe,,,,,35.9153,-79.0386,test,,Male,Master's degree,Under 18,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0D6d6c9PAgNp8ua,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3K1uz54nsfMdawm,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_86TiAqPTeR6TdwW,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9mebXtMZsEp2s7k,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5dKVYuBiAWL08Xs,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1QZbbU1A7zXuoE6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3JXvDlfmBsL9yKy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,85 or older,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_77ZS59qfLPc9v1A,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bdtUXmHxNTdKdbo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),45 - 54,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8AZaUJVRLgb9dXg,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_agRKOqrKUFd0MjI,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,45 - 54,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_23Hw0mEifh9zzPU,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2lwFRWPRfAUPup8,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,55 - 64,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5tXPREYOmsthY46,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,18 - 24,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2agiHSRHLtxvklo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_aVRd3Vzv9suFe4K,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),45 - 54,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3xiDsq1O5QT5Anc,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cvCBpRymHWNPyUC,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0PrP2tejj5CIphk,,,,,35.9153,-79.0386,test,,Female,Master's degree,85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8hKWVE3ZBGBktn0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1LVnLjIj50kflyu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8H5y8vJNqL6STmS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,1,TRUE,9/28/2022 17:46,R_a5cJZltG74iG74i,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b7sUUzYRdufzXD0,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3kQshCDyqBmfmtg,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),Under 18,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bQ6JvDcozyeA0ku,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),Under 18,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_7WCPPGvt62FIgNE,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),55 - 64,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2lExWn6rbl0fq6O,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0Il5rOgY4mhuerk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8ccwakSndIfevsO,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),Under 18,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,1,TRUE,9/28/2022 17:46,R_3VN9EDFobqOr9Gu,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",85 or older,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_07DfCZXHsLuXLwi,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0GJn4VWJPVxe7dQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),35 - 44,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9nvKonSQVWvu1hk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),65 - 74,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3UHhvIVmRSKSjGe,,,,,35.9153,-79.0386,test,,Female,Master's degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cvDTrOY1fLSmhEO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3yBrUlodD2mBM9g,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),25 - 34,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_88LTKHPuAVGR8tU,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3smQsNibUuGWr9c,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,55 - 64,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2mkG35wTbQYUX2e,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),45 - 54,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cGVy0O5gjvkamgK,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eFCv9faz2z8C2lE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,75 - 84,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0TCJ2pxaAITYwvA,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_elCn9ZeCcw5KUTA,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_a9GRLL21gG2fZhY,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3pBtIHHMgbp23cy,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0AHoOuZDvnd2Bam,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_23QOWPfXBzB7LVQ,,,,,35.9153,-79.0386,test,,Female,Master's degree,85 or older,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b2PPGkLi1MAZnGm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),Under 18,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_51QWllqzYwPn1tQ,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6VBDubNvH9bu0yq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),65 - 74,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8B2rGMaoD3vK0T4,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,55 - 64,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0iGDxPUli8zelSe,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),85 or older,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9tpAxonlv6LZQsm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_blrHnHQBSGWfu3s,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),Under 18,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9KXlXwB0OVfsgiG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_d5YbsD6HGQSv5Ge,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6VWhmQNlHcolgKW,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eQxAgs4JNBA6Thc,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),85 or older,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eb4wBuv1zpALlFc,,,,,35.9153,-79.0386,test,,Female,Master's degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b9hx0arkHzsu7wG,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",18 - 24,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9vIvahMz0zrklYG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bwwieGepGPrhAk6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,18 - 24,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_39Rn1ViGMQlNtz0,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_7WgHcbpWSLlqwHI,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9HQPARGRP4WYNgi,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8B9RUteio4P54j4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,Under 18,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bQLvJUneLNvtHwy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_42fXIc4QUbDokaG,,,,,35.9153,-79.0386,test,,Male,Master's degree,35 - 44,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_d5aXf2UOIcgzISa,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bCM0aZ0zfI4MhH8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b9QMvZTYK4rpOHs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,Under 18,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_dg8Y5WFIFWbGBhA,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6yxKhA1zay9h5KS,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3Vr38BqP4k0MTVc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),85 or older,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6zhmgSMefC2q8Em,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5dw0z6yrw7a1vqS,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9RjUXG3jO57K3fE,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5dt2EjnRFa4rm3Y,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3Q1Mh5CDNsMys6y,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,25 - 34,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0GjtxzfdMRA7PqS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8hWiT699rN9Ol7g,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cAs22fH5XIWdS9U,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2adRkAAzDkRlO4e,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),45 - 54,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0lz38mlf99JhujY,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_aXdzB9mmHP6pUGO,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0Prtq7kQK4J8iKW,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8kNlgLr3t30oSIm,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",35 - 44,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3XkehEeNfTFufNs,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_73zxMXrNznu9Smi,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8ACe4uMNMuSJrBs,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_e5useCa1z7gTglU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2lXBNX00plb89VQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1T9G468nIcsN0oK,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3wSnHrrds0ijHHo,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),85 or older,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_4UhlVwA2mfBU2oK,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bEKXo0eHKAdXWR0,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_a2GjMlrwtAnpPoO,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,1,TRUE,9/28/2022 17:46,R_beZPVNCaDVpyCz4,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3QSwlCkEETiGaxw,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eY9gG6wIm1D6ce2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_7aDNh8WNBvQk7Q2,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9B69iUYi43x41Yq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6S5l5QDfAls3YnI,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5hjJLo3Od5CFRrw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",85 or older,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_72mtYeasYxntR42,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),35 - 44,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3ghpPVQncMkQ7sO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0AjRQdd9xH2itjU,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),18 - 24,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3efCpAcArBVpSqG,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6Ja1xUbYB8GatWC,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_6QdSv0wLbm8dEsS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cC728mVYp9CSIfk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cJgwJNbjaaulJau,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",65 - 74,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3UGhD3riv0rafbM,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,1,TRUE,9/28/2022 17:46,R_1TjTa9ST8oMynH0,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3z7ts9XX4t3Nc22,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_etisCXHBcysJLAG,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eKIeaDSsYjhqVH8,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0863GW9Gj7IQkES,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b8Xpci9laBzDIOi,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cFRPxNnMcSNKigK,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5mRE7r2dR1ok3rw,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5naml0XbdvQjRsi,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bwLWdvyK5SQQtYq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),18 - 24,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3fRjhTCNuzKSpVQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0qYp85NCbxmoEdM,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9EloubXxlwA0TCC,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bgD1UxURGzNU7d4,,,,,35.9153,-79.0386,test,,Female,Master's degree,75 - 84,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0qgvwI6G5stgxM2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_25E2NVhFwEWvECW,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_e5oGDYBuVdjlBmC,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,Under 18,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_4Gco3ufY7Xjo9hA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_e2QV5kFHtBkaY50,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3awpRq8dxUVxuyW,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_d1i6uFIgQC0KAfQ,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,75 - 84,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2mjgLPjDNmMHkSG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_e3Aa2XaoDRxac0C,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,85 or older,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2raBlpdhL9092T4,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0AmNVefTvoBRWPc,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),25 - 34,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_djp4cXzSSZIJeQK,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",Under 18,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3ZNsDpPcnT1bo10,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",85 or older,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_abkkDzf01BcTPQG,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_cNMOHS5aOYM4WyO,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3ad27OHnTMHcDNI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),Under 18,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_38dcs3zMEHpVxKC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",65 - 74,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eyQwU46qOalyrKC,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3qN3zIxZfmtIErs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,1,TRUE,9/28/2022 17:46,R_ewZZCHvBDyuCgOG,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),35 - 44,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3jxuyLmnHVvM4aG,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5bc4vQpjAL3O2ou,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_2gwW4O2XcKUb1Gu,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9XOiZ5tfj5WSZfg,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",55 - 64,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1FUuHfkiLVp0gw6,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_dgOA2LmihoI6Y62,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_7V9CS1n9QoKydnw,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9v6w8EzAhNqTPTg,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_bCxCrxgz6Z7V8cC,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_1WZHkanueMguSjQ,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",35 - 44,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_4SljZJnAzz2pIQS,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_doDV8zuUoZgVkq2,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_0jgxHc4V3Vksk5M,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_55UNcjDV8PtHoSG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),75 - 84,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9T7dCxELoQ30JCu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_820AaUgO7ZXBohg,,,,,35.9153,-79.0386,test,,Male,Master's degree,85 or older,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_40zL30aZMEybuuO,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,3,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_5hzMsULnWGrnpBA,,,,,35.9153,-79.0386,test,,Male,Master's degree,75 - 84,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_a8AmabxAJ4Q1IPQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9TtDC8SfyszlEY6,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,45 - 54,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_7WFySAOjjc0HX7M,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8J3WlDP6GegNxHg,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_aWfx2yicd8YFzVA,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eJ4cbwtO8seMfgW,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,25 - 34,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_dgSIK1FKxz0pnw2,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),18 - 24,,0
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_51DbPYNi9BFyrzM,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_agd96JmYUIDUR0O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),35 - 44,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_b1n6S3rOo5dYtuK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9zSca0cHdsrARiS,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eQzFirwahr8Q4GW,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_ehPg1acQt2zME3I,,,,,35.9153,-79.0386,test,,Female,Master's degree,85 or older,,4
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eb7cLgDzCD3Ofdk,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,4,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9LjV9xByZrxrhfU,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,0,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9uWQN0Sxpx17I8u,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,,5
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_8oJKq6lajzkocWq,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",65 - 74,2,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3PYNXC8AXgCnRoG,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,1,
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_9siJAr1DtzbGpxk,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,65 - 74,,2
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_3pHfXlcs5NZ6vRA,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,1
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_eX0Us3yqsLtkGKq,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,,3
+9/28/2022 17:46,9/28/2022 17:46,Survey Test,,100,0,TRUE,9/28/2022 17:46,R_02PG1cqiWSu8C9g,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7QFG8PoIZIm7SPs,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bIep9gufPvvt674,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_39ocBYajHLYFBQO,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a4OY0WJ9QAU0GNM,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cZMtXhuakkqLDZI,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,18 - 24,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3L4rFVvNfGZ16dM,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,65 - 74,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3DWrQ7KDy18uV3E,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_40bscUaYQSobuhU,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0kC8NBjfk65s6Ng,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_03wtqvby2LpdGEm,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6QFSJzdEaAZBaXs,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1GJKl4uj8auK9yC,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6sa9vBCismijFZ4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,85 or older,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0rBR84vI9LbjVAy,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_817LWdSiEzc2RNQ,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),18 - 24,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_5A9CKrFmmnaX3w2,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0J35I56G9yrZSiW,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0wGbbGXh4VgqCFw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3z28ufIaTkIDaGq,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6nf3TTTds8JFRqe,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0UPA0YQfscEty8C,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eQVcLKGwAqOI5HU,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),85 or older,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3Rhr0IMKXOQvhK6,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8IIxhKSX0CQbnG6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cCk0yzs5Nt1NbP8,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7OP5uk2UJs2nsj4,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_esvLSFBJXuM6aA6,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a5xfANc490lCkHs,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a5W1CpTzSnbiE9E,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_868BjQzAAtWSvuC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bHEXX2P8WqOwj6m,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_39izY8otCDRQ1P8,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bvF8WKLNFZltiPc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0kxTQWFNoGfgQ2W,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6zpYpHfFBg44gtg,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bHGIOAbHmotVKmy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,Under 18,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ekOx66sJU14g3JA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0TbkfHZ7vWIusJg,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cvGUxXCW5z7zsY6,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_9T4AwKX46Txx8Lc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",65 - 74,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5clHk8k2iEy3tGe,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,85 or older,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9t6KqGDoPnpTpFI,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_866Y5t6bauAN0WO,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0CJYiWAwm1kCjae,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bKiW7RoGpzKnE2i,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cSGceidSOB8AVW6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,Under 18,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5dpRGpHgx2QL9OK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_afSHr35t0zcboSW,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1BW5iHdATXmNwz4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e9tJteHhn2RiNb8,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e4eM0uN2RcdqMQu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1X6cmsAuqegDXrU,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8AF2yjSHpPX03NY,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9NZvjiCuoiuhIuG,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Mrt7UyyPlaKH54,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3918WdzQlyHqYqq,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b9IkPBBS7d82EgC,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),55 - 64,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6RSXXWeCXcEf0Ng,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4HCj8lM5fe7SDKS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3vECYUEKUaepqNo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_37VkEUXXmPUweoe,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_87DJyhHtkjv53hA,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2otRCyBFGmtR9zM,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3kOTpWEq9ViIXuC,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1B5uk2VDEollIXk,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bQOx3dRCMfprelg,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0NF37Ofzn5tPT6e,,,,,35.9153,-79.0386,test,,Male,Master's degree,Under 18,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_egph43228FVBzyC,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dbTVrRW15ufsHz0,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3OWA6bAFIyV5ANw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2c8211mVHuUNNgq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9SQVb4rT96aERJs,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0v4hkUAuTgw9IBo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eyPSMayw9g9r54O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_02LgY8QnWoauAB0,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2sfKkm2R4DcMqF0,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",35 - 44,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0IdzeWhKJ52mcB0,,,,,35.9153,-79.0386,test,,Male,Master's degree,75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5cDpaEW6Qtw2mPQ,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1HQhHhcpb5ucfk2,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,Under 18,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1RJbZZ6KaevmZGm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,65 - 74,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6CYzvZ0pUOERuf4,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,75 - 84,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eXlSG84PljrAqsm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1NdHHl1bC2O3sNw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0iJyJL45D1AuK0e,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_37Y0IAuv9KnxfLM,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,18 - 24,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6opZPBimQ6Y2GUe,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eeT2yuIYJWgydgO,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9YmtrJg8eWBKb3M,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_daNkFvpUcx4D2Ky,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2reEmVK09W9dMOO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4OOFQMvb28VPeRM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4Yqu4hPswDVFrqm,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_9sG6Ua6MKTKLsnI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0MShDo9vx33rut0,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4YoQn7TwwroPeaa,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_agC4Lds6Lgb1IWi,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3JAmEA77uCvbTz8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_agvNNaSXDSg0eiy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bqtkvKLl4G4jRqK,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,Under 18,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5tgy2oxzQXA11oa,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8D1NA2LryIusb2e,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,Under 18,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aaPiSxn93IZnosS,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cSKkyDUAd2fQyqi,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cOYd5gxzaCkrkhw,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,18 - 24,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0DIzXATHQ4E08Ye,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6KYXaDQab99OtO6,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3aUe3NdApQJKD66,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0NGeoCz6eCUg1qC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5q1C3AoOT3NBTgO,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0AFrDGwPVAfXAX4,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,45 - 54,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cOLpIGbcMqXBfYG,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8wCn2BZAIYAifnU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4N3bAZVb5klRxQO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eajP2EMQwy9bOD4,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,75 - 84,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_78pBJoMIqSM3GbY,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a9rWAlA1IFHmrXw,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_elK2AklJF4WOuyO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",85 or older,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Bloz51iYnjFvQq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bfnIHlUhY5PP6aW,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,85 or older,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3UC53Vb4XK6TlxY,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,85 or older,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6EV6gtIdI6BESDs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bDzVhzI7a0MMLZQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1SxxDf2470dWywK,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cuSoATLCuXuwDYi,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cZubASLKA7RdYhw,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2ofizx9Z9JwULgW,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1SWzdNxPwcczOfA,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bKuqJjHgNMCDH0y,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2lRy55q8yTfDp66,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3rdiDkno0tsLmOq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,65 - 74,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5go5xiH2qcVAytU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),18 - 24,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0rAb9HO1Gkx5AWO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cIVWoJlrhZACCuG,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),55 - 64,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8GL2Agt8rYW9hT8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4U6YilUFJtcykgS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8oVitycuBqjxWpo,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,65 - 74,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3CdQvWE20WRx2xE,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_6gmOYi3CDFPwfd4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9zAQhywf2gOwfAy,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,55 - 64,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bjdXwVwdDm3VK2q,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ePfSg9Y29lYh7tY,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eLObIRSvMixoWjA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,25 - 34,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4IuPtn59Irxqrie,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cN3uzj6SlEdW43I,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cYloQEot9Lp1aYu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d5aXOzLGJREKn8W,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_54uiHJKpnoOkuNw,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cAxXDq5aFH6Avn8,,,,,35.9153,-79.0386,test,,Female,Master's degree,25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0uKwT1R9tLL5WHY,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bacvrdrFhUdcYgS,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5vFdMu7ybOPbAhM,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eCYjhpXxh2t6yzk,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",75 - 84,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_82KGxde7Gt7qNXE,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bK71ZVmMx8Z2L1Y,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0oCR2vn9ID8qMWq,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6KHOejEttGrTTsq,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4IQa8HQjNBavs8e,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,85 or older,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3WPt5AMZYjOCyaO,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eQFsQSV4FhHdajc,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1Yd7azzY24wXGPc,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),65 - 74,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_6hC3UIueO2qPVt4,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,45 - 54,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3917FKzyowi0awK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0ecwqNrD4FaBSPI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7Pb94Cbn76V0lwi,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eEzJagtXRjZaYXs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1AdzvA1PEtIFMxw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cI6hkkNE3m8Qjxc,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,65 - 74,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bdREuVbD2d5NZl4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5d0S096KCA2cuJo,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_es08io8csVsn39k,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9GenwKEZnD8dxGe,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9RMeM3gu1B6WPWK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5vVRvDmZaMCmKbA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2rBexfRZ84dx75s,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,75 - 84,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2nmCd2GKFitleo6,,,,,35.9153,-79.0386,test,,Male,Master's degree,75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aWCNVDtRnV75hDo,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bjvpa2ud3sTSY7k,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6Keuc5Nif4KD3WS,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),55 - 64,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b0ZzN4qssNwEc5M,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cMzmbnoSulBsBq6,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),Under 18,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8rl2q9HiViMtQ5o,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5jXk0490AcSMBSK,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e5kNfe7osKWVtrw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_07bPiZcaq7YQs8m,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ePD4qDLkotHhUwe,,,,,35.9153,-79.0386,test,,Male,Master's degree,25 - 34,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6WQhrh6M5ySPDEy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6oh14GbHS7P848C,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",75 - 84,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6lBT3ITvVq0iq3A,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eWj4JUjKalzuUdg,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5AYRr07Z9jLuoXI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),Under 18,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3sbGtpFPcH443ZA,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),85 or older,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9t2cjTTnY98iDye,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8iGGxitfog1o2P4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eMbkkOgFJUfkaRE,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6tx2J54OgQ0rFAO,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eEinJhBQkeq1YCW,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a5bDpNJOBp1MJ3o,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8H6qBAzu99qMuLs,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_4Osv4l9TTxe8rNI,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5bsciWv2svy7QXk,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_exOcq7qal0aK8Um,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5ngNV0abgqDVix8,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_86ru0lrcjoOVLyC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Mrzzm8EPxSfRZk,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9KPznfo5tSlVXrU,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_50BqY7WqlxY5EfY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3kqdK252TcZkbHM,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3aZChkBlEFyAAGq,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a9SxYkJMNut5c3A,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3UCIbOkTqX2iQlw,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_79bbAaxoyYKnBqK,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,85 or older,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Xn8Qhk1NiHN2mO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4Ot5Zil4oPZkfhc,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1XGOGJIGaINX3F4,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8dZqxzWQjVFNcdU,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0GnXP40gQgw1gZU,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8e4aKm67IqYHIR8,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bsH4UO6KVzKjJdQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3dVkDzaLYl8a0Oa,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3Jk7M5oKvybuwqG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),85 or older,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1MTjeTfDPFFM2cm,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_1TvlCEylyhEax6K,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2nsZh379jcZFtXM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cOPxBXUj76xozsi,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2lSFnje4sDUVk8u,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_37AUPTrPoWqR8oe,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_43lmu254nhTlQVM,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),35 - 44,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bJ9cU4nmojPrUKW,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bpBs2UAVK6xzgYS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3Xbg54wVzKkpVm6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_40cluE2myrIqGiy,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_09tMSZP6KsNfY2O,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5BwI0eM2QW7L9um,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aWN1pYbfsr4J1tQ,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cBYYNOG6q18rkk6,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_emm28HOWVey6gLA,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eROTwe8X5GxLIXA,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_esNVkfqyFGRIJ6u,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9XHGcz24e5y2Zq6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eguJfrSxyUtcbLU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3OY01ozm03Iba8m,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Bk1qrxsq9KwVcG,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bszo5BHY08hBzAa,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2ft2RqoZ0nFvV8G,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aVPM4OXPWqIlnx4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d1jP3XNc3eKQI5g,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eEUCpGsynhXR91I,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aazhwQAWIkk0jlk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_do3n9sSafa9hPIW,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9mBFdTtwWar7zsG,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6JVpS1C1aQqup6K,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_71bj2RLUPihe5Fk,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6JznKU141Xe5tOe,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,35 - 44,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9ymrBnvDbZXBqHY,,,,,35.9153,-79.0386,test,,Female,Master's degree,55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8wZ3daZxtaaOWjA,,,,,35.9153,-79.0386,test,,Male,Master's degree,85 or older,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_20iUQ3MYP5pQv6S,,,,,35.9153,-79.0386,test,,Male,Master's degree,75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a96kAr3YhKWrzP8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),65 - 74,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0P49OmIoeGbpkEe,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bEP5yK5kMrjSb3M,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0839QKAmJIu6d6u,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,18 - 24,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_elCAgT6lZN3VTT0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cI2gNabEyeJVE3k,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eh6SkEs1PwD69LM,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bd47FtTpbVcz0XA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_erhnmQ1fRfyL2Yu,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aXZFac3eJkvdFX0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6Dv2lsUiuyXjdno,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,55 - 64,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9FDJFqYVaXrbcp0,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",Under 18,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1XEMm2g8D2OoW1M,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6Wot5gEowW6wRtY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5vtNJDjRKidr3mu,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bCQzTN4viWYhcRU,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0p3eLEcld6lYO46,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b2aQ98FUhKQGZwi,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,65 - 74,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1NvoxE6PzTIgOfI,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9HtvH9M5vTDzCES,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eLrTVo58whblI2y,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),55 - 64,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7QEgfjmiB4unjgy,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0D4S3QLV1wkMsOG,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_0271Kg4azRb5BJk,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),65 - 74,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b4n4OgrG4VRs4R0,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,65 - 74,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0GLAw0iHq0ncv6S,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_88GIkykKul67yUm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9o8IEwj0cSXYZG6,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8pHw5QMFSvvFyg6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3VjgDIXtvY1uVD0,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e5PBal5YhqTHg7I,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1BPcuzahGu7tSvk,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_89bEKADPqYOwXYy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cMVpMCJoZuA1ol8,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,55 - 64,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d05MWqagdMzRYeq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1OeFTDDYROqSpN4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_8A1vyiHkY90vbcW,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aVQAnIWFtQXLoCG,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_72IypPlBSeFJlem,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bvFvAE3tJaQyXrg,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4JdvxTCRVYLhzx4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b1QyTTi9K1BIocu,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6gmR3xRPFvncVXo,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4MK9xxK7A5f9XAa,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_51PmPO950PABj70,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_71ea8HsH7f5qOay,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9NZNMnk93YzWiMK,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4Vql82h67oepQHA,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aVMQYxsJhp49XE2,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aYnz7Gl8CbnuFgi,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_3BFmClvY1rsBtye,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Lk8ffUpcv2HFtA,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,18 - 24,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bvyiCxYPUbjUv4O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eEB0xSY2vV9cCjQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3t9Nhw7DgfQ55yK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cNoq61QTF2fuqGy,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",75 - 84,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5dTpifL9bSkqNiC,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8pJe5Cu2wKHA0Xs,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),55 - 64,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8D07T1FX4gDgWoe,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b338ocUb1o9jblY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8owp205bpbfuw1o,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,35 - 44,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_0xfdcnBodIKLhjM,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,65 - 74,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_bBGsEip5dT8DbZs,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9LTmd3a50QmkwsK,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5gx0Qdt1poF6kjI,,,,,35.9153,-79.0386,test,,Female,Master's degree,25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_008SyyfZeeMUFgO,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dn8wcidSDK6Q0XI,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bfn03ns1VsZC7C6,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_78wmESQMblulnmK,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),75 - 84,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_7X6PbSGdyJaVwqO,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4TLKoQYjy6zfQmq,,,,,35.9153,-79.0386,test,,Female,Master's degree,55 - 64,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cNCMEdCZc9Hlhv8,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8q3IBzHS5i62F14,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_beXsWH2sbcjZmdM,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0OQfibh5GpjJw0e,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cRXW8Y8tJ8blO6O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),65 - 74,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_4YNVcbqF6pzg4eO,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4G6EqETv069G2BU,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bIyZ1uyK7PIlsKG,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4HoZ3joqKDMPqrY,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dpwAKG8Uc9fnLXo,,,,,35.9153,-79.0386,test,,Female,Master's degree,55 - 64,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4GU9hhVc8dhymDc,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5hhU1v4VHEELbQG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_dg26CJLsC7xxTE2,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),18 - 24,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0ILDqRpBHkBV77w,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cD83veu326hgSeG,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_38fJ8GcwBAsE3AO,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e4lczyVmwFVAN0y,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ddmltLpa3gfYcdg,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6fmPhbwUgBlpL2m,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6XpoNaeNNquAeUK,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,85 or older,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7NZUXo33xNTvmUS,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,35 - 44,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bswWttwoi9sPMge,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aYt56o3cQ4uAeIm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3W4zwxz4sOSIl8O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,35 - 44,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3PBqYCh8d0F5KbI,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cTIfqIQbCScUFdI,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_a2xIeRsIqNjsUnk,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aY3fq3urzIACHQy,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,25 - 34,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9ubyFW7Tx5DZ1TU,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6tGbaChE8cdpuOq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b8csgWpkOC5Ynjg,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1ZaDW8ES8EScAnk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ebTHWzCVJ4Bsr8G,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,Under 18,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_0pwtDu9agUDQTLE,,,,,35.9153,-79.0386,test,,Male,Master's degree,35 - 44,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6mobfUCkMQb6aRU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8oY31isaqMT7rW6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0qzfHsgzteInzro,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8v9HIatg0vZgq1w,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eaIEOBWsw8jeMYK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4GaGoRsCaTeKzn8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),Under 18,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bwJhp2aETOdu1jU,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1NOFjH8EAuJxEY6,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4IXoFu4PnXVtSEC,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0IdAEejGqJYhiwm,,,,,35.9153,-79.0386,test,,Male,Master's degree,75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_79TjLOICV9t9vcG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eCLetzUiWlGeImy,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9KSi7dpD1LJk5gO,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0lEfl1brsnIG9kG,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_808bNca4MAnA1P8,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5jdWWH5b3Xgkh2S,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8wCVEhVkiKUKC3k,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bvYw8pv6kVfDRZ4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),45 - 54,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3jUT9JDfxLX6VVA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),18 - 24,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3wppMHtSEbxbi6y,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ctFXsvUZ9hlphAi,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,75 - 84,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d42pPSMayLJ2zdA,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2rGOwCArA23Lt3g,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),Under 18,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_egsbxJhavP4Y4CO,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1XsXAkvpc6Ul3vg,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5iKXNIznyYJKxfM,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cZIKtFgkhki0rc2,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cAtPdmfSvhvVQnc,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4GyhdnDzaJ5md8i,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9BLXcjhhwx7YkF8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bw7oIglJ6zYEEyW,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9p13UFgJ0EpTvGS,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0GjQfF5v9xB2tVk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4JgZlVwALQ3EteK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8puZrHcVvaPOOAm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),55 - 64,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9LUUMOxXKIllETs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_1LJOgrWSMhLuIf4,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,18 - 24,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1RgAFYlKu4e6Esu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),Under 18,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eFjn4NB7rXmApQq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_a91X9A1RHQlWfUG,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_38mg421VlLG8KGi,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bKFftRbgnzIH7lY,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_417BK9mn6tio4ia,,,,,35.9153,-79.0386,test,,Male,Master's degree,35 - 44,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0O4BCCgTJDOsbRk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cInOyrs6aQeTDXE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e96lYZ9DGkHNEc6,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ebdptmjVzuPON1k,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dbZZIa7AeN07ymO,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dbrKQl9ycUu9XrE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dheiD8XTNBY9ppI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3OVYkLlvRhPCllI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_56gy1skSq2w1GhU,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bltawW7dLA5vD6e,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_26xvTYlgKQCq2vs,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cUwhtRfCF1SuhL0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eWpdB37ctjrEzT8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dnA1BXISUoPnjim,,,,,35.9153,-79.0386,test,,Male,Master's degree,85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_01w5kuZymLyDZnE,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6XSBQ6FzE9y17j8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,65 - 74,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0wxMFBB7vldmxkq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8cu7Arj6XbfWXQO,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0VxuFzBI16XGRHo,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_egQIGlgYr51tJtQ,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_elJWwK5peooDGGq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e8KTEEqo4l77j1k,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,25 - 34,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3kIpNkfSE9R4SOO,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_82pi0RdZaZKJxwq,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_57JiUW4h5xVdbds,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),18 - 24,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7QISMTMhmsAivY2,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aagnlncxfaQk5mK,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d0bElrJSWUqKycm,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,18 - 24,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0PxxC1nzoz7zIRU,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b26VZ6Jbb9bE8XY,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cRPis2NqGHxVqyG,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1ApzUtKgz3vcR5Y,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9KOaac21EuYrCku,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",45 - 54,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_39RE0aMmh6B3Mbk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e9fn0cp38yXeINE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9ZxCBBdqWf6edee,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1Yxhr2fvSONJQsS,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9HJHVIaBsYFEizA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,55 - 64,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ewwsyAWFNrjF5IO,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0B926M87p3Jwqj4,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eqEjV84hRqtJGf4,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5gxmsw2Vj7SN1Fc,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cHdcMgqVC6ZUyi2,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),65 - 74,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bxSTGK460Jt1v6u,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3Q1Posx8NKVP2rI,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),55 - 64,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_abXdkfd1hE6Q9LM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",18 - 24,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9B9DHJxV5efcO7I,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6ooHrJi2tg7N0Bo,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d0yOmBtBUqnYEfA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9sKIA3cZfbMP1ga,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),18 - 24,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_57rl5nrrxgQGRnw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9NuWejJeEOAgGt8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,65 - 74,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9TR5N0SVaLhODVI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),65 - 74,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dp17WkKtO92qeQS,,,,,35.9153,-79.0386,test,,Male,Master's degree,Under 18,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2icu5pOUM0H8S7Y,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_00KQpuymAG3zF30,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5teP4rwdkSKgtM2,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_780gd4DFCYxsglM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e2NTU78iLwQHKR0,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,55 - 64,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5q1ARtKm1fXuxvg,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),45 - 54,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7Wm5yLRuAnl0FxA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4Zyo1y1sOqqqrIi,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,35 - 44,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eM2F1XV9scvL5b0,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",55 - 64,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6y7P3IIXTnDw6X4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d6BP3BWUZphMmBU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,55 - 64,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_d5AA7O9HMBNX1cO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_ba89ZDyQk8CzVt4,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_b8iHMYuxJtNuPxI,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,25 - 34,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_doONJUUrkBGybLU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9XpNYRWw46iGpUO,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0xOar3jUHW5M9QG,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),45 - 54,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_78LzhSur9SUuqOy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_beK5NJrhudYRimy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3rPsfLLIdQDQIoC,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,55 - 64,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_dg0riCOgxfuaL6m,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_74d330SAD52524u,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eR89ncYzVHe810O,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9ESUkm1sBjgazS6,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),35 - 44,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_00uN8CYfSgbu6KW,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0ePG3CsM0vHBtJQ,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),85 or older,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_0VdgiKJd2dwnH7M,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bsCBHl6K3DctFfU,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_efjuypyRuW5eodg,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bmx9YPcIwmTdS4u,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,18 - 24,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_b3MsSK1RUvspbD0,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,,3
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2hjWPWLjhbR0stg,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_42TR89bB3Vqk886,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_9Y91YLz6T3KfuVE,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_74HH51EjxJIZR1I,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),65 - 74,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5oofqCF7NjxaOSW,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_3KqSAj72aAyF4SW,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),45 - 54,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8G64CMIHJ3hd0Wy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cP8V1iwAts2DBFc,,,,,35.9153,-79.0386,test,,Female,Master's degree,25 - 34,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_38xMM0Gjm5VqSpM,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),Under 18,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4MJY1u2Aha8XWDQ,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eJ8IZCMc9cysJv0,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,25 - 34,2,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_1Y9Cf2lbZuFUKjk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,65 - 74,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8C7NGNM5j5FPsBU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",18 - 24,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_cGABa4zEVCDLSES,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_5bRhIpm2JvSAJbU,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,1,TRUE,9/28/2022 17:47,R_3pAjf23T4Y1Twqi,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_eWkcT31406hKQzc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,,4
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_39Qmv5lKnCDu3DU,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6s4zNgLqNxNtiDQ,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7Wf3dwVXEUl7eyG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,1,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_4NES1YlIY5ZG45g,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2ovfhfcgadx9PEi,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),35 - 44,,5
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_e3XkYD5v3qJTa86,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_bjG3BmQb2EGoKQ6,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,0,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_7PS7ox3hsCyICBE,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,,1
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_6yEML34DdATvs8u,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,3,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_aaUNxQXLoIlFV1c,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,,0
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_8DiGt8j0RnYM4v4,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2snbtktjj7nGxpA,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,,2
+9/28/2022 17:47,9/28/2022 17:47,Survey Test,,100,0,TRUE,9/28/2022 17:47,R_2uFajWmSrW4h2wS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,,2
+9/28/2022 17:47,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_7PWD2FrgmcKOSNM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9ThAmH3Z76Uy9h4,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,Under 18,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_414HVv6ka1iVF3w,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_24s9OCT8yd9PcSq,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1TCGHlCOupopZOe,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_73y2ukOIZ10RKgC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0O5r87vGRm7NpL8,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),85 or older,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eP7WhyWxS949Bbw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,Under 18,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6nYkPhh19RgLC86,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),55 - 64,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8IDqbDbYko0D6yq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9vsGcrBWyUmD2PI,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ekA4fmFG4BzFXkG,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0GwhmbmQIqmUpXE,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8ieYNDOvQvF58gK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1WWFBd6anrkfQtU,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_cNjxJ1e7h9neOnY,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0Jmdax8IpkEaYGG,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dpt9OIloyvraqfI,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,35 - 44,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dpoIgDHE7drO93o,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_djqqRScWGyRi44K,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5paZjNn6SjU6Qgm,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ePD47lrvexaOHvo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),65 - 74,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4GW57Iilo1AJwTI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),45 - 54,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8wYGYlTN607qYaW,,,,,35.9153,-79.0386,test,,Female,Master's degree,75 - 84,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_egqrBCl10eOQhMi,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6z2uNBLmovBbS5g,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",85 or older,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3gfJZCnOf4D5gyO,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0TfIvv3K4EHWQDk,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bfsRSXvArVEeUf4,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_861vT9vJBiOQ1Su,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3t8evxHW2CplXDM,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",55 - 64,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_74eqOjJKjGZCvn8,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9Lg9PmJP2QpyZKu,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_01Z3aYgxUH1aM2q,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,65 - 74,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6L7UeHN7yd1SqFw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_74zP2EU9WndmGua,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4Tq4rupltV31b14,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_42P7dfUYJxSTetM,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,25 - 34,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9B2tRJS2CQGSZ9A,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,45 - 54,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6ujC3KtMU0T3PW6,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ahDYEGhxpqllXWm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8djM442vosYefvE,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_02LggnFjLt9h4XQ,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0D3oIcTWvTH3iaa,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8qRaaRkBgUZoQse,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),65 - 74,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cuvsrGnJkkKgzye,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1MugEKsQh2RyIOG,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,55 - 64,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bEkMx25dmBHmjr0,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",25 - 34,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8uesaiiyPfmFYua,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),75 - 84,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3ZZ1bpCzpBVLeUS,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eLPnsShdSwXMU0C,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1BnuflpSu8YeReK,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,55 - 64,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b48YR9PDVXBIN8O,,,,,35.9153,-79.0386,test,,Male,Master's degree,25 - 34,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3duL95GapDu4w2q,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3fnC3Lf3rBh1wkS,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_e2v6Yh1Vxk1iQ2G,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),75 - 84,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_esodpLuiyWotHE2,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",75 - 84,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6zoO3g8kaO4pcq2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,35 - 44,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_d75r96jgJN90AF8,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dogRVjvvSN1cKge,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2laJIcj7URcoeWi,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),35 - 44,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2l6BJ23zJjikp3U,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,25 - 34,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1H6y6CsmmjjRzcq,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b7wjOvU3NUSr7Aq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6leohstXWQaHAbQ,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0B7b3VmXnQXKFU2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,Under 18,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9YV0UyvOb5lS6uq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bwoTOTlvsJtuQrs,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3lbG1iPGGwwavTU,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7P3NO565YvaODga,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",18 - 24,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0qxm0H6ELmCH2po,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9sQv3H5rAMEfstU,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b7bfKeqmFkxs2SG,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,85 or older,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_a9uOaq6egLwQBWm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_71hxZRlyuJ9kzoa,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_1A22oTCAby83JDE,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6QD6MEQSHHxBGGq,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,18 - 24,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9QC3ElgRA5Byt2C,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_23HLYGy3lDARaPY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dop5zGZmO5tepr8,,,,,35.9153,-79.0386,test,,Male,Master's degree,85 or older,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_afzzFlMf03ke9JY,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_5BgjGvrk6mbEyLs,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_etyIOqi1wI6n2zc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cVcU53mtBB0iWA6,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8HVRkzPjMhMsd26,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",85 or older,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9sqhwphdwSMHPBc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3pF7EcNE3sGUSlE,,,,,35.9153,-79.0386,test,,Female,Master's degree,85 or older,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ebcANv9J2zbwKxM,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_43fPauBOfrAkyI6,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0v0fTkOnyMfDWHI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,45 - 54,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1Y3RV5tK9Ggyy7c,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cUawHtJT0tD67Fc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4HMuMRKqyCkYUho,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dp8QCxHJHxbMb78,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,Under 18,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3Ou8QAlA0wjmoCy,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0fAC8wZV8IkRiCy,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,45 - 54,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3n3tZPaVtn78kbI,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b7UC4yT5lhFfBAO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3lMHsRn5aEgEKA6,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),25 - 34,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_85MjbtLqz46JqaG,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5mSQzFRQwOC1mjI,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_0uLgKCCRVtBGtaS,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",55 - 64,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4Z4gIfu0D01rmsu,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_aacSGlr9EQcipUi,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5vRvuwEtOeXx1Gu,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3lwmlvp2f4WAVLM,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7TJxb5p1AMHFo3Q,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2cd3UfEcknLfh9I,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),18 - 24,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5AegBf2WmHetEPA,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,25 - 34,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0NbDanxu8nC7oiO,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_79bxcy47Ug3ohgy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_erhL2iSXSJtvpn8,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),65 - 74,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8wFji5Or3GcnN1I,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6tbda5eCVlwQyvI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6xo5quFGfhar0jQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4TnqjkaCl2oAVsG,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bmHbOThPiJ8cPki,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_40XNITixhYg26F0,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cMZqIMWNByEPWg6,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eQEfV3RxgVBIT4i,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5d5IrFzkGIl64gC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,35 - 44,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1zXLGlaKEvf37Se,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_25ePWsTpasuxwTc,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0BACdL7tVGqBSCO,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_40W3YE5JRKUxH8y,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,55 - 64,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eKaxwGWPbk0ukBw,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_0HambzyPkn0cPlk,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0cTkcjVK11Z1u7A,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),85 or older,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3kMTWSDP1AlbwLs,,,,,35.9153,-79.0386,test,,Female,Master's degree,65 - 74,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9NTtowBCzmVa8EC,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cw5wFG5M6EoPXIW,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",18 - 24,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5aQG79TR3Ccmtdc,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6WCPATyu0eH6ilo,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0f8fRtHRjOLE2Hk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2boBcY1LMrMTfU2,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1FFlCC1wMz9d3Xo,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6PCreySMHf8ASWi,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1TYIGnMvA6WbrYW,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3a7iySlOpoWTh7o,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),25 - 34,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cTFMSJD39hVMObk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9TU5uxo0jNaX8b4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,55 - 64,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ehUFma6QOEou1FQ,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_74i3xji0nyGoG4S,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_03zReDmD7uYuiUe,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5BZYkUvFp23h28m,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_elEjt7Fh29h1MiO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,18 - 24,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0qrXWEPLkoyh8B8,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0BzawiC9KSFcaj4,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0rnWTeOlQKJ2B0y,,,,,35.9153,-79.0386,test,,Male,Master's degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bqrs8O7ba3mbBFc,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,55 - 64,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_0oEOAoRoiNiccZw,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,Under 18,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9zd7ZBuWjKxTOS2,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9so22k03cbTvKRg,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bDgshK0YvvlXsPk,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,18 - 24,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b33DjxPtmnfPIBo,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_blLLfBheOszTyGa,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8xhUk1pe0h3Y6Ro,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,75 - 84,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_24VAoptVbagxBQi,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9NBVPyekb4FAnWu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bQ8OP7pNWxIpMzA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,75 - 84,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bI4Zytph67jriyW,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8oXesde2HWlXIvc,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0dfIdTg2ynKCJls,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,Under 18,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9LjW7wMk7WOF07I,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6n91Vma8sc4ao5M,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3IbqcoapVYEC3Yi,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3fpHrVI4TpAhJ0G,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,35 - 44,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4SDX7GoChKywddY,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),18 - 24,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0lxknzXDZ2paH7o,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),18 - 24,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6PBEuPuSCIZwmkS,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4ToHLzX8gnM8b4O,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,75 - 84,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8bPyUkV6aWRffAG,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bBiLvt7LmIPyZng,,,,,35.9153,-79.0386,test,,Male,Master's degree,65 - 74,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9HStqwnSJGYA3TU,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3ItwKEkYKICUlKu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),18 - 24,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1FxhQxwb70KV5Eq,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7POJGFwxGvDFj6K,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dbXMNmZsaVmWeRU,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9uxpYbcCM7OweQC,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8jNR1Vy29LGq3ci,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),35 - 44,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6SxqEaa1xnBG0m2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_20lykrUZ89MNgpg,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,85 or older,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_51Qxd5DsYiJlXi6,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,55 - 64,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3qrnuHmeIlAT6WG,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ctHQvGGFU1tZirs,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0IfRwiwV8ZjrUJU,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3eXv7MGXKUwSuCW,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,18 - 24,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_1ZIL6wwSpzK7dmC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0CK56IPqVxmLewS,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,45 - 54,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5zFTsUNfaHKsxcG,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2c2yquXPsKSlhLo,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eKUzvwtO6y9Edee,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),85 or older,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6tEWCG08Jbx55CC,,,,,35.9153,-79.0386,test,,Female,Master's degree,Under 18,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eaDG489dWksqudE,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_41L1ctc670PM7vE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),25 - 34,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9zZkn7jJOfwAKai,,,,,35.9153,-79.0386,test,,Male,Master's degree,65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6SATbWh7f1m7ram,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_79WaMaf3u8RKaBU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bDXyV1Ad7DU9iXc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cMSkE31PbxywR8O,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),65 - 74,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_4VDHvTzyTBgNl1c,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",85 or older,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6yC6w3rSTxtNvZc,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7W1S7BYePKDTaCy,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_78PpGfyzNYmMhQW,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0oEe0IePfAFtZbM,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8CjviEFcMIigE1U,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6A1PwrXdEWGDUb4,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",35 - 44,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9tRwvRggD5J4BEy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3k55sFAvAvcUeXk,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cOu7Zbn9JrspXkq,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6nzztJr4i38gH9Y,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6fVXwUBQEftevtQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_ezBapLjhkoij3FQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),65 - 74,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9nIVahx3tZGSLTo,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5ndnzTCtuZbgbiu,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),25 - 34,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5tC8KlAG5kAMkGW,,,,,35.9153,-79.0386,test,,Male,Master's degree,35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ac2RfoaWUimkoCy,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_39SZ3F6uaSIABSK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,Under 18,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_1LhDiqUnX118a8K,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9AgfcKaWj0Uf1qu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),25 - 34,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3sDdDmZj06Jwa22,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,18 - 24,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3CVsFy6HPQon8Y6,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),65 - 74,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bw1b1ONslmhxGNE,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_72nFZ2T4xbZrtga,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),75 - 84,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3rxrypMWZFo3biC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3VjlJrf9wnPEJNk,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,55 - 64,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_29rKUIgMmNQiZdc,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cSj8EYWelYIsnKm,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,45 - 54,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b7yW7SmOmkizewS,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8vunato97EdtWtw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_42biuhf2SZGrUDY,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,35 - 44,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cMXAurlikpcrtJk,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_e2m5UkPMUmG4X2e,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",Under 18,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eX8koNXFFWB3uVU,,,,,35.9153,-79.0386,test,,Female,Master's degree,18 - 24,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3sXSqeMFN9nRiv4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,65 - 74,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eIDGmUR32zv76rY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bI8mKXlcIt2s1iS,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eDJwgcEyGJjHcX4,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),Under 18,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cAxYlQpzm0zvTFQ,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),55 - 64,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bqtv7dC1LVhW8UC,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3z5ZNguYK7I9Czc,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),85 or older,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ewTKyO7rdB6KdsG,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,18 - 24,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cHzTQlqM8xkWwe2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8o9m8NkCxUe5e4e,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_066oVT6zc4WhuUm,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_869Cd1MFGNp8nb0,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),18 - 24,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2o6p8j9QUrrA8Zw,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_78pkMrZOSQDkCV0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4Pfg9A8lCBtVXwy,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9mmSarUVgb50Rca,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3IsZLfmlcen30pg,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",45 - 54,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cMheLlRMaAIekU6,,,,,35.9153,-79.0386,test,,Male,Master's degree,18 - 24,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_d7iprN2fYokWtEy,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1HLXYaP8U9lsmzk,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),65 - 74,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bf6g5ZtEdrN23pY,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8e659uZdiIG4kbY,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_87gAOAcq8mr8od0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eUHWzV9aaPbFuxU,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bJIa7s5dhPZ1zHo,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1B65S7ixfNQOkFE,,,,,35.9153,-79.0386,test,,Female,Master's degree,35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7TyznQZMl37SCVM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),65 - 74,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4NhSgHKFFcmNGTA,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,55 - 64,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_blyXfNcrADBpVps,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1RFmoe3JIuAZqnA,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,35 - 44,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4Z5Gw7h3ManHURE,,,,,35.9153,-79.0386,test,,Male,Master's degree,65 - 74,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_effw0DEJBMR4lF4,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dcbeDv8YNjhKEJM,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,65 - 74,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_blVURvwEah2J6RM,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1NUOmGzApDG0dJs,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Less than high school degree,75 - 84,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3IV6MULJRuGfewm,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eWhxNF7a6dwGTIy,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9zQysrmRNJ383pc,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5cDsHM0BwpSyrcO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,65 - 74,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ewY7ZEqYvG2tpcO,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),55 - 64,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8jNyqWXln9DMYxU,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",35 - 44,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0JJU6vXTCkkm3cO,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),85 or older,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dmVBGGvkWiO26IC,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),65 - 74,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5dOsWkIpV0EbFI2,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cu5b5cpDi6Eb1MG,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,85 or older,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_8wu9Xbsym1JiZQa,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),18 - 24,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4ZN8hPiQnbFOj2e,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0kv9ELkQIHsekoC,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cuO0mNTvFtWGFcW,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),35 - 44,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eXvWBipMuiNWVo2,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),18 - 24,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bpdITgu4i8AwQDQ,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),25 - 34,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_1Ti9PknE2NXf46q,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cvGN9raqHgL5Hx4,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),85 or older,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0kSuAPN0K9HfnCe,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,25 - 34,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9oVturSlzLhRAN0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0Cg0QdVDb6WMJwy,,,,,35.9153,-79.0386,test,,Male,Master's degree,55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3mAw65qMBBABU6G,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",Under 18,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1U2WFXWm3cCzGoS,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,85 or older,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ag8hOthurNBAdWC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0St2BYfxgvO2HVc,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8ofw083aIRaDIfs,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,45 - 54,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_783lJ1EaCmoonm6,,,,,35.9153,-79.0386,test,,Male,Some college but no degree,75 - 84,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0TgYAdmjlLZPRpY,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,18 - 24,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3QSgSNhL8wBMOWi,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),85 or older,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0lCMGAMVXuwJJ5Q,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",45 - 54,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3LcZ0BLWutho3VI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_298rPzc3Q0spCtw,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),35 - 44,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_38UPH9tDu3qxuXY,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9oYlaGBzH73PuMC,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,25 - 34,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_3h2MzghFl9pDmJ0,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),25 - 34,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4UhZDdTzUZ7bUuq,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,45 - 54,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eRrJsmvF2zVhFZA,,,,,35.9153,-79.0386,test,,Male,"Professional degree (JD, MD)",18 - 24,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1AGEPlPPVtks0js,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),75 - 84,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_424b5pwFddGWCYC,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8kx7uZcIhrofKDA,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dhXE8uqKhMNRNnU,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,35 - 44,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0wShINe1iPVWj2e,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),75 - 84,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_7QmWD2ZGHZQr96m,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cAMrzB6eBffTspw,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_39lhcrd9p2xLTKu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,75 - 84,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_aVqAxUH4aXXqoV8,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",25 - 34,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6rpqbWM0r3bq1gi,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),35 - 44,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5BfXCzrtJsvH0KW,,,,,35.9153,-79.0386,test,,Male,Master's degree,65 - 74,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eQeD8xRTHjAuwey,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),35 - 44,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5o0UzXj57Ql3Sia,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,18 - 24,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1XFfP7SoWZoVbyS,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),45 - 54,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_dg3E3rpFohWKSEu,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),65 - 74,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_aYt98kF8WYQ1lno,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,55 - 64,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6niNJC8OXhXgjJQ,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,25 - 34,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bpjevAI18QWKyTI,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_85OkrmvGcld4BiS,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6YhzAF4nA4OeLUW,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),55 - 64,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8vQgbfGfaNLWOPk,,,,,35.9153,-79.0386,test,,Female,"Professional degree (JD, MD)",65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5vvbdk8IWdKzPfw,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,75 - 84,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_77fwgEkxahCWvKC,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5dnmXGJMUfiV4vI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,45 - 54,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8IBQsDaZHh5qnGe,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),18 - 24,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_2tyKrH692rNIBCu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",35 - 44,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_b4bKAIKZdP9GUjs,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),18 - 24,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8ICARC8ZKW1FEJE,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),75 - 84,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_8kMl58YdOCi3Ycm,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),35 - 44,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1RGrKrn9I3uVkzQ,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Some college but no degree,18 - 24,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3WdaxZHR3qWn794,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),25 - 34,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_etB0gm6geXc3y3I,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_81jX0qToZWVxBJQ,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),75 - 84,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5c0euQXcnQyY9eK,,,,,35.9153,-79.0386,test,,Non-binary / third gender,High school graduate (including GED),55 - 64,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_23iy0S40YgJ6PfE,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_cwHUnBlKy4aO6NM,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),35 - 44,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6ij50ME6Ck7QKDY,,,,,35.9153,-79.0386,test,,Female,Bachelor's degree (4-year),18 - 24,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_6fXZ2qQ1xeAc7pI,,,,,35.9153,-79.0386,test,,Male,Doctoral degree,18 - 24,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_08GHgDNSW1vUjdQ,,,,,35.9153,-79.0386,test,,Male,Associate degree (2-year),55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_01dueqowk2z7bq6,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1Umpk0sitNekoXI,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_eVaJJgYqz9Ahsea,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,85 or older,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_80z6H9wvXAgsJro,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Bachelor's degree (4-year),55 - 64,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_8iBjmhABHzca6Am,,,,,35.9153,-79.0386,test,,Non-binary / third gender,"Professional degree (JD, MD)",25 - 34,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_886WUsYZ1OsjUzQ,,,,,35.9153,-79.0386,test,,Male,High school graduate (including GED),Under 18,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_1C8qAXSLqeEkuUe,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Doctoral degree,75 - 84,2,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5gxlE75xV2gCbvU,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,18 - 24,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4GZTtvo9YAY7ldQ,,,,,35.9153,-79.0386,test,,Female,Master's degree,55 - 64,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9MEH7DkyZVnoDfE,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),75 - 84,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_0p4FGnkAJka3sz4,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),65 - 74,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_03dOVxzoftbD86a,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,85 or older,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_5drCIkMPjAPIhuu,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Associate degree (2-year),Under 18,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_af7N6pUOTgD8STs,,,,,35.9153,-79.0386,test,,Female,Some college but no degree,Under 18,,1
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3xXz7uW31cLLFoa,,,,,35.9153,-79.0386,test,,Female,Doctoral degree,45 - 54,4,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_brM4FVtUDvYzGNE,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,75 - 84,3,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_9sDbCD4bkitivtQ,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,Under 18,,4
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_3ejItkgF1XzJuiW,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,65 - 74,,3
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_42vNsbqMoK3mGs6,,,,,35.9153,-79.0386,test,,Female,Associate degree (2-year),85 or older,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_e3YLqhQrpl8DM8u,,,,,35.9153,-79.0386,test,,Male,Less than high school degree,75 - 84,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_bkETgRaxE22W32u,,,,,35.9153,-79.0386,test,,Female,Master's degree,45 - 54,,5
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_ey5FtzGPdzr598W,,,,,35.9153,-79.0386,test,,Female,High school graduate (including GED),Under 18,1,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_4YGLLk3bMg0D1Rk,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,65 - 74,,0
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_aWWxSiWJMrIrWlM,,,,,35.9153,-79.0386,test,,Male,Bachelor's degree (4-year),65 - 74,,2
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,1,TRUE,9/28/2022 17:48,R_eJ49krCTasVNC0m,,,,,35.9153,-79.0386,test,,Female,Less than high school degree,18 - 24,0,
+9/28/2022 17:48,9/28/2022 17:48,Survey Test,,100,0,TRUE,9/28/2022 17:48,R_74b1zZtfwmYIXFY,,,,,35.9153,-79.0386,test,,Non-binary / third gender,Master's degree,85 or older,,3

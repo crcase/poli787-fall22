@@ -459,20 +459,12 @@ treatment effect shouldn’t bear out at all):</p>
 to check that the blocked randomization worked properly.</li>
 </ol>
 <pre class="r"><code># Set working directory
-setwd(&#39;C:/Users/colin/poli787-fall22/lab6-list-experiments&#39;)
-# Load Data
-library(haven)
-df &lt;- read.csv(&#39;data.csv&#39;, na.strings=c(&quot;&quot;,&quot;.&quot;,&quot;NA&quot;))
-df &lt;- df[-c(1:2),]
-# Create binary treatment vector based on responses
-df$treatment &lt;- ifelse(is.na(df$treatment_count), 0, 1)
 
-# Create two by two table
-table(df$treatment, df$gender)</code></pre>
-<pre><code>##    
-##     Female Male Non-binary / third gender
-##   0    196  182                       176
-##   1    194  181                       176</code></pre>
+# Load Data
+
+# Create binary treatment vector based on responses
+
+# Create two by two table</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Perform a linear regression on the count variable (you will have to
 merge these into the same variable) with treatment status as an
@@ -480,32 +472,8 @@ independent variable. How would you interpret the coefficient on the
 treatment assignment?</li>
 </ol>
 <pre class="r"><code># Create outcome variable
-df$outcome &lt;- NA
-df$outcome[df$treatment == 1] &lt;- df$treatment_count
-df$outcome[df$treatment == 0] &lt;- df$control_count
 
-# Run Model
-m1 &lt;- lm(outcome ~ treatment, data = df)
-summary(m1)</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = outcome ~ treatment, data = df)
-## 
-## Residuals:
-##      Min       1Q   Median       3Q      Max 
-## -2.43636 -1.43636  0.07581  1.07581  2.56364 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  1.92419    0.09361  20.555  &lt; 2e-16 ***
-## treatment    0.51218    0.13263   3.862 0.000126 ***
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 1.558 on 550 degrees of freedom
-##   (553 observations deleted due to missingness)
-## Multiple R-squared:  0.0264, Adjusted R-squared:  0.02463 
-## F-statistic: 14.91 on 1 and 550 DF,  p-value: 0.0001259</code></pre>
+# Run Model</code></pre>
 <p>Submit the results of your analysis in an R-markdown file.</p>
 </div>
 

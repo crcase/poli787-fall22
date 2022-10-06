@@ -699,47 +699,51 @@ include the weights in the regression output. We first need add the
 weights from <code>W.out</code> to the data frame, and then use
 <code>lm</code> to estimate the model.</p>
 <pre class="r"><code># Model using WeightIt Weights
-fit1 &lt;- lm(re78 ~ treat, data = lalonde, weights = get.w(W.out))
+fit1 &lt;- lm(re78 ~ treat + race, data = lalonde, weights = get.w(W.out))
 summary(fit1)</code></pre>
 <pre><code>## 
 ## Call:
-## lm(formula = re78 ~ treat, data = lalonde, weights = get.w(W.out))
+## lm(formula = re78 ~ treat + race, data = lalonde, weights = get.w(W.out))
 ## 
 ## Weighted Residuals:
 ##    Min     1Q Median     3Q    Max 
-##  -7980  -3400   -762   2647  53959 
+##  -9017  -3274   -862   2627  54193 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)   5701.8      403.1  14.143   &lt;2e-16 ***
-## treat          647.3      570.1   1.135    0.257    
+## (Intercept)   4669.3      650.6   7.177 2.08e-12 ***
+## treat         1445.2      698.2   2.070   0.0389 *  
+## racehispan    1773.9     1011.7   1.753   0.0800 .  
+## racewhite     1327.4      753.2   1.762   0.0785 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 5483 on 612 degrees of freedom
-## Multiple R-squared:  0.002102,   Adjusted R-squared:  0.0004715 
-## F-statistic: 1.289 on 1 and 612 DF,  p-value: 0.2566</code></pre>
+## Residual standard error: 5472 on 610 degrees of freedom
+## Multiple R-squared:  0.0094, Adjusted R-squared:  0.004528 
+## F-statistic:  1.93 on 3 and 610 DF,  p-value: 0.1236</code></pre>
 <pre class="r"><code># Model using CBPS Weights
-fit2 &lt;- lm(re78 ~ treat, data = lalonde, weights = CPBS.out$weights)
+fit2 &lt;- lm(re78 ~ treat + race, data = lalonde, weights = CPBS.out$weights)
 summary(fit2)</code></pre>
 <pre><code>## 
 ## Call:
-## lm(formula = re78 ~ treat, data = lalonde, weights = CPBS.out$weights)
+## lm(formula = re78 ~ treat + race, data = lalonde, weights = CPBS.out$weights)
 ## 
 ## Weighted Residuals:
 ##    Min     1Q Median     3Q    Max 
-## -573.9 -246.1  -55.0  189.3 3967.1 
+## -654.7 -240.9  -59.5  195.2 3984.6 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)   5593.3      402.0  13.913   &lt;2e-16 ***
-## treat          755.8      568.5   1.329    0.184    
+## (Intercept)   4555.8      647.0   7.041 5.15e-12 ***
+## treat         1555.7      695.0   2.238   0.0256 *  
+## racehispan    1824.7     1008.8   1.809   0.0710 .  
+## racewhite     1327.8      750.1   1.770   0.0772 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 402 on 612 degrees of freedom
-## Multiple R-squared:  0.00288,    Adjusted R-squared:  0.001251 
-## F-statistic: 1.768 on 1 and 612 DF,  p-value: 0.1842</code></pre>
+## Residual standard error: 401.1 on 610 degrees of freedom
+## Multiple R-squared:  0.01045,    Adjusted R-squared:  0.00558 
+## F-statistic: 2.147 on 3 and 610 DF,  p-value: 0.09323</code></pre>
 </div>
 <div id="survey-weighted-regression" class="section level2">
 <h2>Survey Weighted Regression</h2>

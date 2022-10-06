@@ -450,8 +450,7 @@ the control group.</p>
 <p>Let’s try to compute this by hand. We will first fit a simple GLM
 regressing treatment on the covariates:</p>
 <pre class="r"><code># Estimate glm predicting treatment status
-ps.mod &lt;- glm(______ ~ age + educ + married + nodegree + re74 + re75, 
-              data = lalonde, family = &quot;binomial&quot;)
+ps.mod &lt;- glm(__________________)
 # Create predictions from above model
 ps &lt;- ______(______, type = &quot;response&quot;)
 # View propensity scores
@@ -487,10 +486,10 @@ weight by race, we also want to make sure we control for that factor in
 this model. Let’s compare the results between the model without
 weighting and with weighting:</p>
 <pre class="r"><code># Estimate and View model without weights
-lalonde_model_noW &lt;- lm(re78 ~ treat + race, data=lalonde)
+lalonde_model_noW &lt;- lm(____ ~ _________, data=lalonde)
 summary(lalonde_model_noW)
 # Estimate and view model with weights
-lalonde_model_w &lt;- lm(re78 ~ treat + race, data = lalonde, weights = weights)
+lalonde_model_w &lt;- lm(____ ~ _________, data = lalonde, weights = weights)
 summary(lalonde_model_w)</code></pre>
 <p>As you can see, after weighting our observations, the treatment is
 now significant whereas without weights it would be not significant!</p>
@@ -506,7 +505,7 @@ you can compute weights with <code>WeightIt</code>.</p>
 which uses the same set of parameters from the <code>bal.tab</code>
 function:</p>
 <pre class="r"><code># Use weightit to calculate weights
-W.out &lt;- ________(______ ~ age + educ + married + nodegree + re74 + re75,
+W.out &lt;- ________(______ ~ ____________________________,
         data = lalonde, estimand = &quot;ATT&quot;, method = &quot;ps&quot;)
 W.out</code></pre>
 <p>This creates a <code>Weightit</code> object, which gives you a
@@ -547,7 +546,8 @@ The method, therefore, avoids an iterative process between model fitting
 and balance checking and implements both simultaneously. Let’s see how
 these weights compare to the <code>ps</code> process we used in
 <code>WeightIt</code>.</p>
-<pre class="r"><code>CPBS.out &lt;-  ______(_____ ~ age + educ + married + nodegree + re75 + re74, 
+<pre class="r"><code># Create CPBS Weights
+CPBS.out &lt;-  ______(_____ ~ ____________________, 
             data = lalonde, ATT = TRUE)
 
 # Merge hand and weightit weights
@@ -682,15 +682,15 @@ the ATT. How do they look?</p>
 ncp_final &lt;- readRDS(&quot;ncp_final.rds&quot;)
 
 # Look at balance of demographic variables
-bal.tab(treat~ _____ + _____ + ____ + _____, 
-        data = ncp_final, estimand = &quot;ATT&quot;, m.threshold = .05)</code></pre>
+bal.tab(______ ~ _____ + _____ + ____ + _____, 
+        data = ncp_final, estimand = ______, m.threshold = .05)</code></pre>
 <p>The balance table suggests that education and year of birth are
 unbalanced between the treated and the control group. Use weightit to
 weight them (you should do this even on variables that are listed as
 balanced).</p>
 <pre class="r"><code># Create weights
 W.out &lt;- weightit(_____ ~ ______ + _____ + ____ + ______,
-                  data = _______, estimand = &quot;ATT&quot;, method = &quot;ps&quot;)
+                  data = _______, estimand = ______, method = &quot;ps&quot;)
 # Re-check balance with weights
 bal.tab(W.out, m.threshold = .05, disp.v.ratio = TRUE)</code></pre>
 <p>Regress the outcome variable on the treatment, <code>interest</code>,
@@ -731,8 +731,7 @@ ncp_clean &lt;- ncp_final %&gt;% dplyr::select(treat, interest,
 ncp_clean &lt;- na.omit(ncp_clean)
 
 # Calculate weights with survey weights
-W.out &lt;- weightit(_______________________,
-                  s.weights=&quot;weights&quot;)
+W.out &lt;- weightit(_______________________, s.weights=&quot;weights&quot;)
 # Check balance
 bal.tab(W.out, m.threshold = .05, disp.v.ratio = TRUE, un=TRUE)</code></pre>
 <p>Again, the covariates are all balanced now.</p>

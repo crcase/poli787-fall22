@@ -65,8 +65,7 @@ Let's try to compute this by hand. We will first fit a simple GLM regressing tre
 
 ```{r}
 # Estimate glm predicting treatment status
-ps.mod <- glm(______ ~ age + educ + married + nodegree + re74 + re75, 
-              data = lalonde, family = "binomial")
+ps.mod <- glm(__________________)
 # Create predictions from above model
 ps <- ______(______, type = "response")
 # View propensity scores
@@ -103,10 +102,10 @@ And these are then the weights for the ATE for each observation. We can now refi
 
 ```{r}
 # Estimate and View model without weights
-lalonde_model_noW <- lm(re78 ~ treat + race, data=lalonde)
+lalonde_model_noW <- lm(____ ~ _________, data=lalonde)
 summary(lalonde_model_noW)
 # Estimate and view model with weights
-lalonde_model_w <- lm(re78 ~ treat + race, data = lalonde, weights = weights)
+lalonde_model_w <- lm(____ ~ _________, data = lalonde, weights = weights)
 summary(lalonde_model_w)
 ```
 
@@ -122,7 +121,7 @@ You compute the weights with the `weightit` function, which uses the same set of
 
 ```{r}
 # Use weightit to calculate weights
-W.out <- ________(______ ~ age + educ + married + nodegree + re74 + re75,
+W.out <- ________(______ ~ ____________________________,
         data = lalonde, estimand = "ATT", method = "ps")
 W.out
 ```
@@ -164,7 +163,8 @@ And the correlation matrix confirms our calculations - they are exactly the same
 There is an alternative method, called Covariate Balancing Propensity Score Weighting (`CBPS`), that performs a similar procedure than the `ps` method we used above. The difference comes in that `CPBS` estimates propensity scores such that both covariate balance and prediction of treatment assignment are maximized. The method, therefore, avoids an iterative process between model fitting and balance checking and implements both simultaneously. Let's see how these weights compare to the `ps` process we used in `WeightIt`.
 
 ```{r}
-CPBS.out <-  ______(_____ ~ age + educ + married + nodegree + re75 + re74, 
+# Create CPBS Weights
+CPBS.out <-  ______(_____ ~ ____________________, 
 			data = lalonde, ATT = TRUE)
 
 # Merge hand and weightit weights
@@ -260,8 +260,8 @@ Using bal.tab, look at the balance of demographic variables (`gender`, `region`,
 ncp_final <- readRDS("ncp_final.rds")
 
 # Look at balance of demographic variables
-bal.tab(treat~ _____ + _____ + ____ + _____, 
-        data = ncp_final, estimand = "ATT", m.threshold = .05)
+bal.tab(______ ~ _____ + _____ + ____ + _____, 
+        data = ncp_final, estimand = ______, m.threshold = .05)
 ```
 
 The balance table suggests that education and year of birth are unbalanced between the treated and the control group. Use weightit to weight them (you should do this even on variables that are listed as balanced). 
@@ -269,7 +269,7 @@ The balance table suggests that education and year of birth are unbalanced betwe
 ```{r}
 # Create weights
 W.out <- weightit(_____ ~ ______ + _____ + ____ + ______,
-                  data = _______, estimand = "ATT", method = "ps")
+                  data = _______, estimand = ______, method = "ps")
 # Re-check balance with weights
 bal.tab(W.out, m.threshold = .05, disp.v.ratio = TRUE)
 ```
@@ -310,8 +310,7 @@ ncp_clean <- ncp_final %>% dplyr::select(treat, interest,
 ncp_clean <- na.omit(ncp_clean)
 
 # Calculate weights with survey weights
-W.out <- weightit(_______________________,
-                  s.weights="weights")
+W.out <- weightit(_______________________, s.weights="weights")
 # Check balance
 bal.tab(W.out, m.threshold = .05, disp.v.ratio = TRUE, un=TRUE)
 ```

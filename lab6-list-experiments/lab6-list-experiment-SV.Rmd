@@ -13,7 +13,7 @@ bibliography: conjoint.bib
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval = TRUE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, message = FALSE, warning = FALSE)
 ```
 
 # List Experiments
@@ -76,16 +76,12 @@ For today's exercise, I want you to take the survey data and conduct the followi
 
 ```{r}
 # Set working directory
-setwd('C:/Users/colin/poli787-fall22/lab6-list-experiments')
+
 # Load Data
-library(haven)
-df <- read.csv('data.csv', na.strings=c("",".","NA"))
-df <- df[-c(1:2),]
+
 # Create binary treatment vector based on responses
-df$treatment <- ifelse(is.na(df$treatment_count), 0, 1)
 
 # Create two by two table
-table(df$treatment, df$gender)
 
 
 ```
@@ -94,14 +90,8 @@ table(df$treatment, df$gender)
 
 ```{r}
 # Create outcome variable
-df$outcome <- NA
-df$outcome[df$treatment == 1] <- df$treatment_count
-df$outcome[df$treatment == 0] <- df$control_count
 
 # Run Model
-m1 <- lm(outcome ~ treatment, data = df)
-summary(m1)
-
 
 ```
 

@@ -188,11 +188,11 @@ As you can see, the two are still highly correlated, but with some slight differ
 
 ```{r}
 # Model using WeightIt Weights
-fit1 <- lm(re78 ~ treat, data = lalonde, weights = get.w(W.out))
+fit1 <- lm(re78 ~ treat + race, data = lalonde, weights = get.w(W.out))
 summary(fit1)
 
 # Model using CBPS Weights
-fit2 <- lm(re78 ~ treat, data = lalonde, weights = CPBS.out$weights)
+fit2 <- lm(re78 ~ treat + race, data = lalonde, weights = CPBS.out$weights)
 summary(fit2)
 
 ```
