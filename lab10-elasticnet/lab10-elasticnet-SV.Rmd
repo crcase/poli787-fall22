@@ -1,0 +1,285 @@
+---
+title: "Elastic Net, LASSO, and Ridge Regression"
+author: "Colin Case, with code adapted from Rob Williams"
+date: "November 3, 2022"
+header-includes:
+   - \usepackage{amsmath}
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, message = FALSE, warning = FALSE)
+options(digits=2) # round all R output to two digits
+
+```
+
+
+## Bias-Variance Trade-off in Multiple Regression
+
+When we run simple linear regression models, where the aim is predicting $n$ observations of an outcome variable $Y$ with a linear combination of $m$ predictor variables, $X$, we end up with something that looks like this:
+
+$$
+Y = X\beta + \epsilon\\
+\epsilon \sim N(0, \sigma^2)
+$$
+Because we don't know the true values of $\beta$, we are forced to estimate is using OLS. OLS has the property of being unbiased so long as certain assumptions are met. However, when our goal is prediction, and not necessarily inference regarding the true effects in the population, we can at times sacrifice predictive precision by having models with high variance. In OLS, this occurs when predictor variables are highly correlated with each other, or we have many predictors and more complex models. To get around this problem, we can reduce the variance at the cost of introducing some level of bias. This process is called *regularization* and is beneficial for the predictive performance of the model. We are going to work with Elastic Net, a common regularization technique that is actually the combination of ridge- and lasso-regressions, two other regularization techniques.
+
+
+The function `glmnet()` (Elastic Net) solves the following equation over a grid of lambda values.
+
+
+\begin{align}
+L_{enet}(\hat\beta) = \frac{\sum_{i=1}^{N}(y_i-x^T_i\hat\beta)^2}{2n} + \lambda(\frac{1-\alpha}{2}\sum^m_{j-1}\hat\beta^2_j + \alpha \sum^m_{j-1}|\hat\beta_j|)
+\end{align}
+
+
+
+You should notice two things. First, if $\lambda = 0$, this is the same loss function we use in OLS. Second, the elastic net penalty is represented by $\alpha$. When $\alpha=1$ the result is a lasso regression i.e.$\lambda(\sum^m_{j-1}|\hat\beta_j|)$ and when $\alpha=0$ the result is a ridge regression i.e.  $\lambda(\sum^m_{j-1}\hat\beta^2_j$. Since we are interested in prediction, rather than choosing predictors on theoretical considerations, we need to determine which model is the best fit. We can accomplish this using a variety of methods, but one of the most common is mean squared error (MSE), which is given by:
+
+$$
+\begin{align}
+\frac{1}{n}\sum_{i=1}^{n} \left(\hat{Y_i} - Y_i \right)^2
+\end{align}
+$$
+
+
+Let's make some fake data to test out `glmnet`. Create $1000 \times 5000$ matrix $\mathbf{X} \sim \mathcal{N}(0,1)$. This means we have a dataset with $p \gg n$, if we want to include all of the possible predictors. We need to figure out the best fitting model that includes $1 \leq k \leq 1000$ predictors. To make life easier in this example, create a response variable $y$ that is a linear combination of the first 15 variables, plus an error $\epsilon \sim \mathcal{N}(0,1)$ (this assumes that $\beta \in \{ \beta_1, \ldots, \beta_{15} \} = 1$ since we're not multiplying our predictors by anything
+
+## Elastic Net Simulation
+
+```{r}
+# Clear Environment
+rm(list = ls())
+# Load packages
+library(xtable)
+library(knitr)
+library(parallel)
+library(glmnet)
+library(dplyr)
+library(caret)
+library(parallel)
+# Set working directory 
+setwd("C:/Users/colin/poli787-fall22/lab10-elasticnet")
+# Set Seed
+set.seed(8125)
+# Number of observations
+n <- _____
+# Number of predictors
+p <- _____ 
+# Create random matrix of predictors
+x <- matrix(rnorm(n * p), nrow = _, ncol = _)
+# first 15 predictors affect outcome
+y <- apply(x[, __:___], 1, sum) + rnorm(n) 
+```
+
+MSE increasingly penalizes larger deviations from the true value due to the square. Since MSE needs true and predicted values, that means we need training and test data. Randomly select 1/3 of `x` and `y` to leave out as test data.
+
+```{r}
+# Create training rows
+train_rows <- sample(_:_, ___*___)
+# Split predictors into training, test data
+x_train <- x[__________, ]
+x_test <- x[-__________, ]
+# Split outcome into training, test data
+y_train <- y[____________]
+y_test <- y[-____________]
+```
+
+Now, there are two parameters to tune: $\lambda$ and $\alpha$. `glmnet` allows use to tune $\lambda$ via cross validation, but only with a fixed $\alpha$, so we are going to focus on just three: $\alpha = \{0,.5, 1\}$. Set family equal to gaussian.
+
+
+
+```{r, message = F}
+# Fit models using variying alpha levels
+fit_lasso <- ______(______, _______, family = '________', alpha=___) # LASSO
+fit_ridge <- ______(______, _______, family = '________', alpha=___) # ridge
+fit_elnet <- ______(______, _______, family = '________', alpha=___) # e-net
+```
+
+Let's assess which of these is the best approach. And since we're choosing models based on predictive power, let's do so for a range of $\alpha$s between 0 and 1 (we will still only focus on $\alpha \{0,.5, 1\}$ when looking at MSE). Use the `cv.glmnet()` function to carry out k-fold cross validation on the training set of our fake data.
+
+```{r}
+# alpha values from 0 to 1 using cross validation and various alpha levels
+fits <- mclapply(0:10, function(x) cv.glmnet(______, ______, type.measure='____',
+                                           alpha=x/10, family='gaussian'))
+```
+
+
+
+The `cv.glmnet()` function will automatically identify the value of $\lambda$ that minimizes the MSE for the selected $\alpha$. Use `plot()` on the lasso, ridge, and elastic net models we ran above. Plot them next to their respective `cv.glmnet()` objects to see how their MSE changes with respect to different log($\lambda$) values.
+
+
+
+```{r, fig.align = 'center'}
+# Arrange plots
+par(mfrow=c(3,2))
+# Plot lasso regression
+plot(fit_lasso, xvar = 'lambda')
+plot(fits[[11]], main = 'LASSO')
+# Plot elastic net regression (alpha = .5)
+plot(fit_elnet, xvar = 'lambda')
+plot(fits[[6]], main = expression(paste('Elastic Net (', alpha, '= .5)')))
+# Plot ridge regression
+plot(fit_ridge, xvar = 'lambda')
+plot(fits[[1]], main = 'Ridge')
+```
+
+A few things to note here: recall that ridge regression is not good with variable selection, as coefficients cannot be equal to zero. This is why in the lowest plot, you can see the coefficients aren't actually at zero. We know from the data generating process that only the first 15 variables affect the outcome variable, which is why we see a much higher MSE. For the lasso and elastic net models, we can see that MSE doesn't significantly increase until the coefficient values for our first 15 coefficients start shrinking towards 0. This tells us that we're doing a good job of selecting relevant features without overfitting to our training data
+
+We can extract the $\lambda$ value which produces a model with the lowest MSE from the `cv.glmnet` object, but first, let's make sure we chose the best $\alpha$ value for our data. Use the `predict()` function and our test `x` and `y` to generate $\hat{y}$s for each cross validated fit_ Be sure to set `s` in `predict()` because the default is not to use the $\lambda$ value that produced the lowest MSE, but the entire sequence of $\lambda$ values tried.
+
+```{r}
+# out of sample predictive accuracy
+mse <- sapply(0:10, function(x) mean((predict(fits[[x + 1]], newx = x_test,
+                                              s = 'lambda.min') - y_test)^2))
+
+# report OOS MSE for each alpha value
+options(digits = 4)
+kable(data.frame(alpha = (0:10)/10, mse))
+options(digits = 2)
+```
+
+In this case, the model that best predicts our data is a lasso with $\alpha = 1$. We can extract the $\lambda$ value that produced the best fitting model from our `cv.glmnet` object. We can now get coefficients from the best fitting model within this model. When using `coef()` on the cross validated model, don't forget to set `s = 'lambda.min'` since MSE is not the default. This will return a sparse matrix with the coefficient values for the coefficients included in the best fitting model (as assessed by MSE). Extract just these coefficients and their names to another object so we can see how the lasso did. `str()` might be helpful here...
+
+
+```{r}
+lambda_best <- fits[[10]]$lambda.1se
+best_coefs <- coef(fits[[10]], s = 'lambda.min')
+data.frame(name = (best_coefs@Dimnames[[1]][best_coefs@i + 1]), coefficient = best_coefs@x)
+```
+
+Our lasso picked all 15 of the predictors we used to create our response variable -- nice! It also picked other predictors that *weren't* in our model, but notice that the estimated coefficients for them (mean = 0) are much smaller than for the 'true' variables (mean = 0.92). This suggests that our lasso did a good job identifying important features because the implicit coefficients on the first 15 predictors are equal to 1, while the absence of the remaining predictors means their implicit coefficients are equal to 0.
+
+If we want to assess how much explanatory power these variables are providing, we can inspect a number of plots of the model.
+
+
+```{r, fig.align = 'center'}
+# fit a glmnet with our best alpha value of 1
+fit_best <- _____(_____, ______, family = 'gaussian', alpha = ____)
+
+# coefficients vs. L1 norm of coefficients
+plot(fit_lasso, xvar = 'norm', label = T)
+
+# coefficients vs. log lambda values
+plot(fit_lasso, xvar = 'lambda', label = T)
+
+# coefficients vs. % deviance explained
+plot(fit_lasso, xvar = 'dev', label = T)
+```
+
+Notice that the coefficient values for the first 15 predictors are consistently separated from the coefficients for the other included predictors. The first two plot tell us that our model is doing a good job of selecting relevant features, while the last one shows that as $\beta \rightarrow 1$ for the first 15 variables, we explain more of the variation in `y`.
+
+
+## Advanced Features
+
+We don't always start from a place of complete ingorance when running elastic nets. Sometimes we have significant prior knowledge that certain predictors are important in explaining variation in our outcome. We can incorporate this information via the `penalty.factor` argument. Generate a fake dataset similar to above, but this time fit a model where we are *very* confident that the first predictor is important, and somewhat confident that the next two predictors are important.
+
+
+
+```{r}
+# observations
+n <- 25  
+ # predictors
+p <- 50 
+# Create Random matrix; outcome as a function of first 6 rows (sum)
+x <- matrix(rnorm(n * p), nrow = n, ncol = p)
+y <- apply(x[, 1:6], 1, sum) + rnorm(n)
+
+# Split into training and test sample
+train_rows <- sample(1:n, (2/3) * n)
+x_train <- x[train_rows, ]
+x_test <- x[-train_rows, ]
+y_train <- y[train_rows]
+y_test <- y[-train_rows]
+
+# lasso with no prior info on feature importance
+lasso_ign <- glmnet(x = x_train, y = y_train, alpha = 1)
+
+# lasso that has to include first feature, and only 1/2 penalty on next two
+lasso_prior <- glmnet(x = x_train, y = y_train, alpha = 1,
+                      penalty.factor = c(0, .5, .5, rep(1, ncol(x_train) - 3)))
+```
+
+
+
+```{r, fig.align = 'center'}
+# Plot outcomes from prior two models
+par(mfrow = c(2, 2))
+plot(lasso_ign, label = T, main = 'Ignorance')
+plot(lasso_prior, label = T, main = 'Prior Knowledge')
+plot(lasso_ign, xvar = 'dev', label = T, main = 'Ignorance')
+plot(lasso_prior, xvar = 'dev', label = T, main = 'Prior Knowledge')
+```
+
+Our less penalized predictors have the three largest coefficients in the prior knowledge model, and they have much lower coefficient estimates and explain much less of the variation in the dependent variable in the ignorance model.
+
+
+## Individual Exercise
+
+
+
+Use `fl2003.RData`, which is a cleaned up version of the data from @Fearon2003. Use `cv.glmnet()` to fit elastic net models where onset is explained by all variables for a variety of $\alpha$ values, using a loss function that is appropriate for the binomial nature of the data. Present plots of the model's predictive accuracy for different $\alpha$ values. Fit a model with `glmnet()` using the $\alpha$ value you found that minimizes predictive error. Report coefficient estimates for all variables, and plot the changes in coefficient values vs. the L1 norm, log-lambda value, and deviance explained.
+
+Randomly sample five cases where `onset = 0` and five where `onset = 1`. Fit an elastic net with the optimal $\alpha$ value you found for the whole dataset. Are the most important coefficients the same?
+
+
+```{r, fig.align = 'center'}
+# Load data
+load('fl2003.RData')
+
+# create predictors and response matrix 
+fl_x <- _____________
+fl_y <- _____________
+
+# sequences of alpha values to evaluate (by .1)
+alphas <- ___________________
+
+# cross validation elastic nets for different penalty parameters
+fits <- mclapply(_____, function(x) _____(____, ____, type.measure = '____',
+                                            alpha = ___, family = '________'))
+
+# plot AUC for alpha = 0, .5, and 1
+par(mfrow = c(3,1))
+plot(fits[[___]])
+plot(fits[[___]])
+plot(fits[[___]])
+
+# penalty parameter w/ highest AUC
+alpha_best <- which.max(sapply(fits, function(x) max(x$cvm)))
+
+# fit elastic net w/ best penalty parameters
+best_fit <- glmnet(___, ____, family = '______', alpha = __________)
+
+# plot coefficients
+______________________________________________
+______________________________________________
+______________________________________________
+______________________________________________
+
+# coefficients from whole dataset
+betas <- ______________________________________________
+
+# sample 10 observations for each outcome
+fl_samp <- ______________________________________________
+
+# create predictors and response for groups
+fl_x_samp <- __________
+fl_y_samp <- __________
+
+# fit sample data w/ best penalty parameter from entire dataset
+best_fit_samp <- glmnet(______, _______, family = '______', alpha =________)
+
+# plot coefficients
+_______________________
+_______________________
+_______________________
+
+# coefficients for sampled data
+betas_samp <- ______________________________________________
+
+# compare coefficients for both models
+kable(data.frame(betas, betas_samp) %>% rename(All = Overall, Sample = Overall.1))
+```
+
+
+
