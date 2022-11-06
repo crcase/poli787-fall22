@@ -1,0 +1,449 @@
+---
+title: "Webscraping and Text Pre-processing"
+author: "Colin Case, with code adapted from Rachel Porter"
+date: "November 3, 2022"
+header-includes:
+   - \usepackage{amsmath}
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, message = FALSE, warning = FALSE)
+```
+
+# Text as Data (Natural Language Processing)
+
+In the social sciences, text is a rich data source that can provide a wide variety of information to answer substantively important questions. This can include the content of a speech, the sentiment or emotion of a tweet, or broader patterns and trends in speech over time. Recent advances in NLP have made the analysis of text much more accessible -- you no longer need to hire RAs to code text or have more inconsistent methodologies for analyzing text.  
+ 
+NLP is broadly the study of language and how it is used, often within and/or across languages. We can use both statistical tools and machine learning tools to analyze and interpret text as data. There are two general terms you should be familiar with:
+
+1. Corpous: collection of documents (think data set of text, such as all news articles written in 2022)
+2. Documents: individual collections of text (think an individual item, such as an individual news article)
+
+These documents can also be broken down further in what is known as parsing.
+
+## Webscrapping
+
+Often, text data is hosted online and we want efficient means to collect the data. Web-scraping refers to the extraction of data from websites. There are three broad steps in webscrapping:
+
+1. Identify the page or pages with data or text of interest
+2. download the source code (HTML or XML)
+3. Parse source code and create a data set
+
+
+Go to any website you like, right click and then click on `Inspect` (Google Chrome). This would pull up the source file of the webpage. There is a lot going on! This is what your computer sees. I will talk a bit about what some of these components are in that source file.
+
+### HTML
+
+It would be useful to understand how a webpage is structured before proceeding. First of all, webpages can come in many formats. The most common is `HTML`, or HyperText Markup Language. `HTML` is a structured language, very similar to how Markdown is when it comes to formatting content.
+
+`HTML` uses tags , or `<>`, to specify specific elements on a webpage. Tags usually come in pairs, so for example, for a paragraph, we would use `<p>` in the following manner:
+
+```
+<p>
+  This is a paragraph.
+</p>
+```
+
+Just like a LaTeX document, it has a fixed structure:
+- a document tag `<html>`: signalling that this is an `HTML` webpage.
+- a header tag `<header>`: which controls metadata such as title of the webpage and the description of the webpage.
+- and a body tag `<body>`: which is where the majority of the content is written.
+
+Therefore, a vanilla `HTML` webpage should have at least the following structure:
+
+```
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+Hi!
+</body>
+</html>
+```
+
+To be effective in webscraping, you need to know some of the common tags:
+- `<a>` - a hyperlink.
+- `<h1>` - A heading. This is equivalent to using `#` in Markdown. `<h1>` is equivalent to one `#` sign, `<h2>` is the same as `##`, `<h3>` is the same as `###`, respectively. But `HTML` supports up to `<h7>` and markdown supports up to 4 levels of subheadings.
+- `<p>` - A paragraph.
+- `<div>` - A divison/ section. Note that `<div>` by itself may not mean much, but it is commonly used to format a specific chunk of content. I will talk a bit more about styling in the CSS section.
+- `<tr>` - Table Rows. This signals a row in a particular table.
+- `<td>` - Table cells.
+- `<img>` - An image. It typically has the following syntax : `<img src="path to image">`, followed by other parameters.
+
+Because a webpage is structured this well, it is possible to parse an `HTML` file, find these tags, and extract the content we need accordingly.
+
+It would be very annoying to format the same content with the same code multiple times if the content is going to follow the same style. Therefore, webpages typically have styling information written in another language called CSS (Cascading Style Sheets).
+
+CSS classes denote how the contents should be formatted. You can set border color, background color, text color, et cetera. For example, the following code creates a `.myDiv` CSS class, and applies it to the content using the `<div>` tag:
+
+```
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+This is some text outside of a div element.
+
+</body>
+</html>
+```
+
+
+Let' see a really quick real world example:
+
+```{r}
+# Clear Environment
+rm(list = ls())
+# Load packages
+library(httr)
+library(stringr)
+library(rvest)
+library(readtext)
+library(quanteda)
+library(skmeans)
+library(dplyr)
+library(tidytext)
+library(tibble)
+library(ggplot2)
+library(jsonlite)
+
+# Set working directory 
+setwd("C:/Users/colin/poli787-fall22/lab11-text1")
+# Set Seed
+set.seed(8125)
+# Load URL
+cities <- "https://en.wikipedia.org/wiki/List_of_cities_by_GDP"
+# Download source code
+cities_html <- read_html(cities)
+# Parse Source Code
+tables <- html_nodes(cities_html, "table.wikitable")
+# Extract HTML Make Table 
+cityGDP <- html_table(tables, header=TRUE)[[1]] #tables is a list with 1 element,
+cityGDP
+# Keep environment clean
+rm(cities_html, cityGDP, tables, cities)
+```
+
+Go to the actual wikipedia page, right click on the table we extracted and look at the html text. How are we identifying this table in the text? How does the table look compared to Wikipedia?
+
+Let's do a more involved example now -- scrapping speeches made by the White House during the Obama Administration. You can find those here: https://obamawhitehouse.archives.gov/. As you can see, there are multiple pages of speeches, so we need to be somewhat creative in how we do this by using a loop. Further, all of the speeches are located on individual pages, not just the page we are looking at. So we need to (1) get the link for each individual speech (2) extract the speech text from each of the 10 links that are on a specific page.
+
+For this, we'll be using the `rvest` package. There are a few specific commands you'll want to be familiar with:
+
+- `read_html`: This reads in all html text from a website.
+- `html_nodes`: find specific html attributes.
+- `html_attr`: Get actual attributes based on nodes
+- `html_text`: Get text from nodes
+
+```{r}
+# Use Root of URL 
+root <- "https://obamawhitehouse.archives.gov/"
+
+## Creating an empty dataframe for text
+master <- data.frame()
+
+## Increase the timeout wait time 
+timeout(40000)
+
+## Using a for loop, scrolling over 10 pages to find links 
+## to text on White House press releases (there are 100, but we'll do just 10 for time)
+for (p in 1:10){
+  
+  ## Taking the root and modifying it to iterative over each page
+  obama <- read_html(paste(root, "briefing-room/speeches-and-remarks?term_node_tid_depth=31&page=", 
+                           p, sep = ""))
+  
+  ## Using CSS selector, picking the content we want from each page
+  ## In this case, we want the links to the speeches that start after #content-start
+  obama_nodes <- html_nodes(obama, css="#content-start")
+  
+  ## Pull out the links to speeches from the previous object 
+  ## From above, what code is this that we want?
+  links <- html_attr(html_nodes(obama_nodes, css = "a"), "href")
+  
+  ## Loop inception! Now we're going to be looping over the links 
+  ## we just pulled in the previous set in ordet to get the text
+  for(i in 1:10){
+    
+    ## Same deal as above, creating a URL using the links 
+    link_app <- read_html(paste(root, links[i], sep = ""))
+    
+    ## Pulling out the stuff we want ie. the text 
+    link_nodes <- html_nodes(link_app, css="p")
+    
+    ## Extracting the text from the node
+    text <- html_text(link_nodes)
+    
+    ## Pieceing all the text together into one document 
+    text <- paste(text, collapse = "")
+    
+    ## Pulling out the date, we will use this as `metadata`
+    date_nodes <- html_nodes(link_app, css="#press_article_date_created")
+    
+    ## Pulling the text from the node 
+    date <- html_text(date_nodes)
+    
+    ## Placing the text and date into a new matrix, which we will 
+    ## append to the master so that the final result will be a complete 
+    ## data set of text and dates!
+    temp <- matrix(data = NA, nrow = 1, ncol = 2)
+    temp[,1] <- date
+    temp[,2] <- text
+    master <- rbind(master, temp)
+  }
+}
+
+## Some final housekeeping
+colnames(master) <- c("date", "text")
+master[] <- lapply(master, as.character)
+# Add ID Column for each speech
+master <- mutate(master, id = row_number())
+## Let's save this in case we need to load it back later 
+save(master, file = "obama_speeches.Rdata")
+
+# Keep environment clean 
+rm(date, i, links, p, root, text, temp, obama_nodes, obama, link_nodes, link_app, date_nodes)
+```
+
+
+A quick note on webscrapping, many websites don't let you scrape them, so make sure you read the terms before scrapping. This is true of Twitter, Facebook, and the NYT. Most of these sites do have text to be collected via API's. For example, we can do the following with the NYT if we were interested in NYT news articles mentioning Donald Trump in the lead up to the 2016 presidential election:
+
+```{r}
+
+NYTIMES_KEY <- "GaHxO48m5mA8ttBX0zKbZNAhGh4FxGAM"
+
+baseurl <- paste('http://api.nytimes.com/svc/search/v2/articlesearch.json?',
+                 '&fq=source:',"(The New York Times)",'AND type_of_material:',"(News)",
+                 'AND persons:',"(Trump, Donald J)",
+                 '&begin_date=','20160522&end_date=','20161107&api-key=',NYTIMES_KEY,sep="")
+
+initialQuery <- fromJSON(baseurl)
+maxPages <- round((initialQuery$response$meta$hits[1] / 10)-1) 
+
+maxPages = ifelse(maxPages >= 5, 5, maxPages)
+
+donald_text <- vector("list",length=maxPages)
+
+for(i in 0:maxPages){
+  nytSearch <- fromJSON(paste0(baseurl, "&page=", i), flatten = TRUE) %>% data.frame() 
+  donald_text[[i+1]] <- nytSearch 
+  Sys.sleep(5) #I was getting errors more often when I waited only 1 second between calls. 5 seconds seems to work better.
+}
+
+articles <- rbind_pages(donald_text)
+
+colnames(articles) <- str_replace(colnames(articles),
+                               pattern='response.',replace='')
+colnames(articles) <- str_replace(colnames(articles),
+                               pattern='docs.',replace='')
+colnames(articles)
+
+
+##thanks to Heather Geiger for posting her code
+
+# Keep environment clean
+rm(donald_text, baseurl, maxPages, NYTIMES_KEY, nytSearch, initialQuery, articles, i)
+
+```
+
+Like most research, webscrapping is somewhat of an art form and will differ depending on the task, but hopefully this is enough of an introductory to see what is possible and to have some code you can adapt for your own work!
+
+## Text Pre-processing
+
+Let's turn back to our speeches from the White House. If your computer did not have the computational power to scrape the data, feel free to load the data I provided for you from the scrape. Let's take a look at one of the speeches:
+
+```{r}
+# View First speech
+master$text[1]
+```
+
+If we were to perform statistical analysis right now, it has lots of junk that is not related to the actual content of the speech. For example, /n is used to skip a line in html text, but does not actually relate to any of the content of the speech. This is true a number of other places throughout the text as well. This is why we use text pre-processing to simplify documents' representations. Common types of pre-processing steps include remove stop words (e.g. and, or, it), numbers, punctuation, capitalization, and stemming (using the root of a word). It is important to note, you should consider what your data generating process is when engaging in these steps. For example, stemming is important when using Latent Dirichlet Allocation (LDA) but would remove important context if using word embeddings. Other potential steps include tokenizing (breaking larger documents into smaller strings, such as sentences) and removing infrequent words.
+
+
+The first thing we need to do is to define the structure of the corpus. We need to tell the machine which columns are IDs, which columns are the main text, and if there's any document-level covariates that we want to incorporate (more on this in a couple weeks!).\ 
+
+Build a corpus from this data using `quanteda::corpus()`. Remember to specify the ID column and the text column (see `?corpus`). Call `summary()` on the resulting object. What is in the corpus object?
+
+```{r}
+# Create corpus
+speeches_corpus <- quanteda::corpus(master, docid_field ="id", docnames = docnames, text_field ="text")
+# View Object
+summary(speeches_corpus)[1:5,]
+
+```
+
+A summary of the corpus shows that we've turned the different speeches into tokens that are machine readable. We also keep metadata regarding when the speech was given. However, our text is still quite raw. This is especially true when your text has a lot of punctuations, white spaces, numbers of special characters that quanteda might take as a token. In addition, sometimes you want to tokenize by phrases rather than words (N-grams), so you would want to manually fine tune the tokenization process using `tokens()`.
+
+Check `?tokens`. It gives you several options as to what to remove (or keep). For example, you may want to remove numbers, punctations. 
+
+One feature of tokens() is that it allows you to build N-grams easily. **N-grams** refer to phrases that are N words long. For example, the paragraph "Go Tar Heels!" can be tokenize as a 2-gram, and you would find "Tar Heels" as a 2-gram. This could be helpful in incorporating the context of which a particular word is being used in a text.
+
+Manually create tokens using `tokens()` removing numbers and punctuation. Make sure to specify ngrams = 1. Examine the resulting object using `summary()` and `head()`
+```{r}
+new_tokens <- tokens(speeches_corpus,
+                     remove_numbers=TRUE,
+                     remove_punct = TRUE,
+                     ngrams = 1)
+# View first 5 observations
+head(new_tokens)
+```
+
+Next, we want to remove stopwords. Stopwords are words that appear highly frequently in a language that do not bear much meaning on its own. Common examples include grammaticaly devices like "is", "are", "of" in English, or devices for first-person reference like "I", "me". 
+
+Quanteda loads the `stopwords` function from `tm`, which gives a pre-defined list of stopwords in different languages. Be default it will return English, but you can specify other languages as well. the `stopwords` package provides stopwords list in more languages if you need it.
+
+Once you have the stopwords list, then you can use a combination of `apply` and `ifelse()` to remove them.
+
+Examine the stopwords list in English and a foreign language of your choice. Then, remove these stopwords from your tokens.
+
+```{r}
+# View Stop words from two languages
+head(stopwords("English"))
+head(stopwords("German"))
+# Remove stop words using sapply
+new_tokens2 <- sapply(new_tokens, function(x) ifelse(x %in% stopwords("English"), "", x))
+```
+
+Stop words are also flexible, in that we can specify keeping certain stop words or adding other words that we would like removed. Let's change it so we keep "her" because we might be substantively interested in this, and consider "America" a stopword.
+
+```{r}
+# Remove her from stopwords list
+eng.stopwords <- stopwords('English')
+keep.stopword <- eng.stopwords[-c(which(eng.stopwords=="her"))]
+# Specify America as a stopword
+keep.stopword <- c("America",keep.stopword)
+# Remove new stopwords
+new_tokens2 <- sapply(new_tokens, function(x) ifelse(x %in% keep.stopword, "", x))
+
+```
+
+The last thing you can do is to stem words. Stemming refers to the removal of ending of words (e.g. conjugates, different variants of the same word due to grammar) such that you end up in a more compact set of words to work on.
+
+You can do this with `tokens_wordstem`. Again you may want to specify a language, since stemming works differently in different languages. By default it uses the stemmer in English. 
+```{r}
+# Tokenize wordstems
+new_tokens2 <- as.tokens(new_tokens2)
+new_tokens2 <- tokens_wordstem(new_tokens2)
+```
+
+Once you've cleaned the text, we are now ready to turn that into the DFM (document feature matrix). This is extremely simple in `quanteda`, by using `dfm()`.
+
+```{r}
+# Create DFM from tokens
+speeches_dfm <- dfm(new_tokens2)
+head(speeches_dfm)
+```
+
+Now, if you'll recall, from our scrapped data we have in master, there is some early text (e.g. Jump to section) that we don't want in our text and was pulled for each speech from the webpage. The cleaning we used didn't get rid of this. So we can going to go back to master and follow a similar process using regular expressions. Let's see how they work:
+
+```{r}
+# Example sentence
+example <- "The quick \nbr\nown fox jumped \rover the lazy, foxy dog"
+
+## Let's say we wanted to get rid of any instance of an animal
+## being mentioned. To do this we can specify that the patterns 
+## 'fox' and 'dog' be replaced with '' --- simply white space 
+## To do this, we'll use the gsub command, which is essentially
+## substituting the pattern for something else
+
+example <- gsub( "\\bfox\\b", "", example)
+example <- gsub( "\\bdog\\b", "", example)
+
+## The "\b" here is ensuring that the substitute is only occurring
+## for an exact word patter, note here that the word 'foxy' was
+## not susbsittuted out! How about those other tags? Those are 
+## line breaks and need to be stripped as well!
+example <- gsub("[\r\n]", "", example)
+example
+## The "\r" here tells gsub to get rid of the pattern \n in all instances, even 
+## if it is combined with another word.
+
+# Exercise: Use gsub to remove \n, \t, and the initial website text (master)
+master$text <- gsub("[\r\n]", "", master$text)
+master$text <- gsub("[\r\t]", "", master$text)
+master$text <- gsub( "\\bJump to main content\\b", "", master$text)
+master$text <- gsub( "\\bJump to navigation\\b", "", master$text)
+
+# View first speech to check
+master$text[1]
+```
+
+Note, this cleaning is not nearly complete! If we were to actually be using this data, we would probably do more to capture the specific speech text, not just some of the summary information.
+
+
+We can now take what we have in the corpus and create a DFM directly. When creating the dfm, we can also carry out a lot of the steps we did above at the same time (there are lots of ways to clean text - even more than shown here - it all depends on what your text looks like for how you pre-process it!). We are also going to make everything lower case as well (this is a default option).
+
+```{r}
+# Create corpus from cleaned master speeches
+speeches_corpus <- quanteda::corpus(master, docid_field ="id", docnames = docnames, text_field ="text")
+
+# Create DFM from speeches_corpus
+speeches_dfm <- dfm(speeches_corpus, 
+                    stem = TRUE,
+                    remove = keep.stopword, 
+                    remove_punct = TRUE,
+                    tolower = TRUE)
+# View First 5 rows (how similar to above is this?)
+head(speeches_dfm)
+```
+
+
+Now that we have a generally cleaned DFM, let's look at some of the features. We can get the top 100 "features" (words) using `topfeatures`. After that, plot the top 20 most used words with their frequency. Does the result identify some things we might want to remove in the future?
+
+```{r}
+# Select Top features
+tops <- topfeatures(speeches_dfm, 100)
+
+## Plot top 20 most used words
+top20 <- as.data.frame(tops)
+top20 <- top20 %>% rownames_to_column("words")
+top20 <- top20[1:20,]
+
+ggplot(top20, aes(x=top20$word, y=top20$tops, fill=top20$word)) +
+  geom_bar(stat="identity")+
+  theme_minimal()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))+
+  ylab("Number of Times Word Appears in Obama Speeches")+
+  xlab("")+
+  guides(fill=FALSE)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
