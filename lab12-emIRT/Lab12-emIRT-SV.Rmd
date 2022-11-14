@@ -1,0 +1,290 @@
+---
+title: "Lab 2 - Fitting Item Response Theory Models with emIRT"
+author: "Colin Case, with some code adapted from Rob Williams"
+date: "11/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, message = FALSE, warning = FALSE)
+```
+
+Item response theory (IRT) models estimate a latent underlying quantity for individual units (legislators, judges, students) based on a series of binary indicator variables for each unit (votes, decisions, test answers). The basic two parameter IRT model is given by:
+
+
+$$\text{Pr}(vote_{ij}) = \text{logit}^{-1}(\beta_j\theta_i - \alpha_j)$$
+
+
+
+Where $\beta_j$ is the discrimination parameter for vote $j$, which determines how much a yes or no rollcall on this vote tells us about legislator $i$'s ideal point $\theta_i$. $\alpha_j$ is a baseline difficulty parameter for vote $j$ that $\theta_i$ must overcome for us to observe a 1.
+
+# emIRT
+
+The MLE implementation of simple unidimensional IRT models under `ltm` might take a long time to fit, and at times we might run into convergence issues. For larger datasets, we can use the E-M implementation with the `emIRT` package. This package is very flexible in the sense we get to define priors for the ideal points and cut-points of questions.
+
+# Worked Example: Attitudes to Science, 1992
+
+Load the `science.csv` with the link given. It is a dataset from the Consumer Protection and Perceptions of Science and Technology section of the 1992 Euro-Barometer Survey (Karlheinz & Melich, 1992) based on a sample from England.\ 
+
+The questions asked are given below:\ 
+
+`Comfort`: Science and technology are making our lives healthier, easier and more comfortable.\ 
+
+`Environment`: Scientific and technological research cannot play an important role in protecting the environment and repairing it.\ 
+
+`Work`: The application of science and new technology will make work more interesting.\ 
+
+`Future`: Thanks to science and technology, there will be more opportunities for the future generations.\ 
+
+`Technology`: New technology does not depend on basic scientific research.\ 
+
+`Industry`: Scientific and technological research do not play an important role in industrial development.\ 
+
+`Benefit`: The benefits of science are greater than any harmful effect it may have.\ 
+
+
+All of the items are measured on a four-point scale with response categories "1=strongly disagree", "2=disagree to some extent", "3=agree to some extent" and "4=strongly agree".\ 
+
+To use `emIRT`, we need to provide two sets of values aside from the data:
+
+1. The starting values, which should be a named list of the following terms:
+  - $\beta$ - a $J*1$ vector for the discrimination parameter.
+  - $x$ - a $N*1$ vector of starting values of individual ideal points
+  - $\tau$ - a $J*1$ vector of starting values for the question cutpoint $\tau_i$
+  - $DD$ - the squared term of $\tau$.
+  
+2. Priors, which should be a named list of the following terms:
+ - $\mu_x$ - A scalar $(1*1)$ prior for the respondent ideal points
+ - $\sigma_x$ - A scalar prior for the covariance matrix for such ideal points
+ - $\mu_\beta$ - A $(2*1)$ vector prior for the mean of cutpoint $\tau_i$ and discrimination parameter $\beta^*$
+ - $\sigma_\beta$ - A $(2*2)$ prior covariance matrix for $\tau_i$ and $\beta^*$.
+ 
+`emIRT` is very strict about the formatting of these values. Each of these vectors must be a matrix even though they are technically vectors, and they should be a named list. For example $\beta$ must have the name `beta` in the list of starting values, and $\mu_x$ must be have the name `mu` under the object `x` in the prior list.
+
+Below we will fit a simple 2PL model using the E-M implementation for ordinal data `ordIRT()`. This function only accepts ordinal variables measured on a 1-3 scale, so we will convert those in the beginning.
+
+Now define the appropriate starting values and prior values for `ordIRT()` and fit the model. Acquire the cutpoints for each question and plot them. Then, plot the density of the ideal points for each individuals.
+
+```{r}
+# Clear Environment
+rm(list = ls())
+# Load packages
+library(emIRT)
+library(dplyr)
+library(ggplot2)
+library(parallel)
+
+# Set working directory 
+setwd("C:/Users/colin/poli787-fall22/lab12-emIRT")
+
+# Load data
+science <- read.csv("https://raw.githubusercontent.com/okanbulut/myrfunctions/master/science.csv", 
+                    header=TRUE)
+head(science)
+
+# Set starting values
+science2 <- as.matrix(science)
+# Change scale of variables
+science2 <- apply(science2, MARGIN=c(1,2), FUN= function(x) ifelse(x<3,1,
+                                                                  ifelse(x==3, 2, 3)))
+# Create Matrix Dimensions
+J<- ncol(science2)
+N<- nrow(science2)
+
+
+# Create Starting values 
+alpha <- matrix(0, nrow=J, ncol=1, byrow=TRUE) # Zero 
+beta <- matrix(_____, nrow=___, ncol=_, byrow=TRUE) # colmeans
+x <- matrix(_____, nrow=__, ncol=1, byrow=TRUE) # Rowmeans
+tau <- matrix(-0.5, nrow=J, ncol=1, byrow=TRUE) #-0.5
+DD <- matrix(0.25,nrow=J,ncol=1,byrow=TRUE) #0.25
+
+# Create starting list matrix
+starts = list(alpha=alpha,beta=beta,x=x,tau=tau,DD=DD)
+
+# Create Priors (use standard normal distribution for X)
+x_mu <- ______________ 
+x_sigma <- ____________
+beta_mu <- matrix(0, nrow=2, ncol=1, byrow=TRUE) # zero
+beta_sigma <- matrix(c(25,0,0,25), nrow=2, ncol=2, byrow=TRUE) #25,0,0,25
+
+# Create prior list matrix
+xpriors <- list(mu = ___, sigma= _____)
+betapriors <- list(mu = ____, sigma= _____)
+
+priors <- list(x=______,beta=_____)
+
+# Fit ordinal IRT
+emfit <- ordIRT(_____, # data
+                .starts = _____,
+                .priors = ______,
+                .D=1,
+                .control = {list(threads=5, verbose = TRUE, #emIRT supports Parallel Processing- change threads to use more threads.
+                            thresh = 1e-6, maxit = 500)})
+
+```
+## Plotting ideal point estimates
+
+Once the model is fitted, you can extract the ideal point estimates (called `x` in the fit object), the discrimination parameter $\beta$, the cut off points $\tau$ and the covaraite-level differences ($\delta$).
+
+The following script extracts the cut-off points for each item:
+
+```{r results="asis"}
+
+### Figure 1 - Cut-off point estimates.
+cutpointsdf <- data.frame(questions = colnames(science), #covariates
+                 cutpoints = emfit$means$tau,
+                 ci_lwr = emfit$means$tau - (1.96*sqrt(emfit$vars$tau)),
+                 ci_upr = emfit$means$tau + (1.96*sqrt(emfit$vars$tau))) #cutoff points
+
+cutpointsdf <- cutpointsdf %>%
+  arrange(cutpoints) %>% #sort the df
+  mutate(order = seq(from=1, to =nrow(.))) # create order item, such that the plot is sorted by cutpoints.
+
+ggplot(cutpointsdf, aes(y = cutpoints, x = as.factor(order), ymin = ci_lwr,
+                           ymax = ci_upr)) +
+  geom_point(aes(), cex = .45,) +
+  geom_linerange(size = .45, col = 'black', alpha=0.5) +
+  coord_flip() +
+  labs(title="Cut-off points for Science Attitude Items", y = "<- Skeptics | Supporter ->", x="Item")+
+  scale_x_discrete(labels= cutpointsdf$questions)+
+  theme_bw() +
+  ylim(-2,2)+
+  theme(plot.background = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.border = element_blank(),
+        axis.ticks.y = element_blank())
+```
+
+And plotting the density of the estimated ideal points is super simple:
+
+```{r results="asis"}
+idealpointsdf <- data.frame(id = seq(1:nrow(science)),
+                 idealpt = emfit$means$x)
+
+ggplot(idealpointsdf, aes(idealpt))+
+  geom_density()+
+  geom_vline(xintercept=mean(idealpointsdf$idealpt), lty=2)+
+  theme_bw()+
+  xlab("Ideal Point")
+```
+
+You can also plot all estimates of ideal points for each respondent, sorted by their ideal point estimates in descending order:
+
+```{r results="asis"}
+# extract empirical 95% CI
+results <- data.frame(id = seq(1:nrow(science)),
+                      idealpt = emfit$means$x,
+                      ci_lwr = sapply(emfit$means$x, function(x) (x - (1.96*sqrt(emfit$vars$x)))), 
+                      ci_upr = sapply(emfit$means$x, function(x) (x + (1.96*sqrt(emfit$vars$x)))))
+
+#sort df by ideal point est.
+results <- results %>% arrange(idealpt)
+#get order variable
+results$order <- seq(from=1,to=nrow(results))
+
+# plot ideal points and uncertainty
+ggplot(results, aes(y = idealpt, x = order, ymin = ci_lwr,
+                           ymax = ci_upr)) +
+  geom_point(aes(), cex = .45,) +
+  geom_linerange(size = .45, col = 'black', alpha=0.5) +
+  coord_flip() +
+  labs(title="Estimating Attitudes to Science", y = "<- Skeptics | Supporter ->")+
+  theme_bw() +
+  theme(plot.background = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.border = element_blank(),
+        axis.title.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+
+```
+
+
+# Assignment: Immigration attitudes prior to the 2018 Mid Term Elections
+
+The 2018 Cooperative Congressional Election Survey (CCES) dataset contains a couple of questions poking at people's immigration attitudes. They asked if people support or oppose a series of policy proposals related to immigration:
+
+`CC18_322a` - Increase spending on border security by $25 billion, including building a wall between the U.S. and Mexico \ 
+
+`CC18_322b`- Provide legal status to children of immigrants who are already in the United States and were brought to the United States by their parents. Provide these children the option of citizenship in 10 years if they meet citizenship requirements and commit no crimes. (DACA). \ 
+
+`CC18_322c_new` - Reduce legal immigration by eliminating the visa lottery and ending family-based migration. \ 
+
+`CC18_322d_new` - Grant legal status to DACA children, spend $25 billion to build the border wall, and reduce legal immigration by eliminating the visa lottery and ending family-based migration \ 
+
+`CC18_322c `- Withhold federal funds from any local police department that does not report to the federal government anyone they identify as an illegal immigrant \ 
+
+`CC18_322f` - Send to prison any person who has been deported from the United States and reenters the United States. \ 
+
+Fit an IRT model and plot the ideal point estimates on people's latent attitudes to immigration (pro-immigration vs. anti-immigration) from this battery of 6 questions for 500 randomly drawn respondents. In addition, plot the distribution of ideal points. In your plot, order the respondents by their attitude estimates in descending order. Is there something strange in the plot? Why?
+
+## Data cleaning:
+
+The dataset has been cleaned for you with the following script:
+
+```{r}
+im <- read.csv("im.csv")[,-1]
+#Recode variables
+im$CC18_322b <- ifelse(im$CC18_322b == 1, 2, 1)
+im$CC18_322d_new <- ifelse(im$CC18_322d_new == 1, 2, 1)
+
+#so now value of 1 ~ pro-immigration, value of  2~ anti-immigration.
+
+#coerce into 1 (supporting some statement), 0 (NA), and -1 (against some statement)
+im <- sapply(im, FUN= function(x)
+  ifelse(is.na(x), 0,
+         ifelse(x == 1, 1, -1)))
+im <- as.matrix(im)
+```
+
+## Hints:
+
+1. `ordIRT()` in the worked example is for ordinal response items. For binary response items, you should use `binIRT()`.
+2. For `binIRT()`, there is a quick way to construct priors and starting values with `makePriors()` and `getStarts()`. Check the documentation for these two functions for details.
+3. The `rollcall` (sometimes abbreviated as `rc`) item is a format for IRT model datasets from another package `pscl`. You can mimic the structure of that object by manually creating a list and make a pointer directing the `votes` parameter to your dataset:
+```
+rc <- list(votes = dataset)
+```
+4. To randomly sample up to N observations from a dataset, you can use `sample()` (for rowIDs) or `dplyr::sample_n()`.
+5. The number of threads in a CPU are NOT the same as the number of cores in your CPU. Some CPUs allow [hyperthreading](https://www.hp.com/us-en/shop/tech-takes/what-is-hyperthreading), which means that the same core will be connected to multiple threads to process requests. To get the correct number of threads, use the `logical` parameter in `parallel::detectCores`. For example:
+```
+parallel::detectCores(logical=TRUE)-2 #For a quad-core CPU with hyperthreading enabled, this will give you 6 (8-2). We take out 2 so that we leave one core free to prevent the PC from completely freezing.
+```
+
+## Estimation:
+
+```{r}
+# Load number of cores minus 2
+n_cpus <- detectCores() - 2
+
+# Use makePriors and getStarts to get priors and starting values
+
+
+# Get rc
+
+
+# Estimate binIRT
+
+```
+
+## Plotting
+
+```{r results="asis"}
+
+
+# extract empirical 95% CI
+
+### randomly sample 500 people
+
+#sort df by ideal point est.
+
+# plot ideal points and uncertainty
+
+# Plot distribution of respondents
+
+```
+
+These questions alone do not seem to be able to help create an accurate measure of people's attitudes to immigration. We can see that most of the estimates evolve around 0, and we have a lot of respondents with the exact same point estimate. Interestingly, the DACA option rephrased (`CC18_322b`) also has a negative difficulty parameter $\alpha$. Since most of the anti-immigration statements like `CC18_322a` (build the wall) or `CC18_322c_new` (end green card lottery/ family visas) all have negative $\alpha$s, the results would suggest that anti-immigration opponents are also likely to support DACA! However, we need more data to see if the anti-immigration respondents indeed support DACA, or if this is just a measurement error.
